@@ -1,0 +1,274 @@
+/*
+统一处理：建议在这个位置统一调用背景图（这里指多个布局或模块或元件共用的图）和清除浮动（这里指通用性较高的布局、模块、元件内的清除）等统一设置处理的样式！
+布局（grid）（.g-）：将页面分割为几个大块，通常有头部、主体、主栏、侧栏、尾部等！
+模块（module）（.m-）：通常是一个语义化的可以重复使用的较大的整体！比如导航、登录、注册、各种列表、评论、搜索等！
+元件（unit）（.u-）：通常是一个不可再分的较为小巧的个体，通常被重复用于各种模块中！比如按钮、输入框、loading、图标等！
+功能（function）（.f-）：为方便一些常用样式的使用，我们将这些使用率较高的样式剥离出来，按需使用，通常这些选择器具有固定样式表现，比如清除浮动等！不可滥用！
+皮肤（skin）（.s-）：如果你需要把皮肤型的样式抽离出来，通常为文字色、背景色（图）、边框色等，非换肤型网站通常只提取文字色！非换肤型网站不可滥用此类！
+状态（.z-）：为状态类样式加入前缀，统一标识，方便识别，她只能组合使用或作为后代出现（.u-ipt.z-dis{}，.m-list li.z-sel{}），具体详见命名规则的扩展相关项。
+*/
+@mainfont:14px;@base100:100px;@center:0 auto;
+body{
+  font-size: @mainfont;font-family: 'Microsoft YaHei','simsun',sans-serif;
+  background: #151618;
+}
+@headerWidth:1090px;
+@bodyWidth:1090px;
+@headerLeftWidth:820px;
+@headerRightWidth: @headerWidth - @headerLeftWidth;
+.g-wrap{
+  width: @bodyWidth;
+  margin:0 auto 70px auto;
+}
+/* header start  */
+
+.g-wrap-header{
+  background: #000;
+  margin-bottom: 25px;
+}
+.g-header{
+  width: @headerWidth;
+  height:@base100 + 26;
+  margin: @center;
+  background:#000;
+}
+.g-header-left{
+  width: @headerLeftWidth;
+  height:inherit;
+ /* background: #fbed6a;*/
+
+}
+.g-header-right{
+  width:@headerRightWidth ;
+ /* background: #fbed6a;*/
+  height:inherit;
+
+}
+.m-logo{
+  width: @base100;
+  height: 44px;
+  padding-top:5px;
+  margin-bottom: 30px;
+  background: #f1f1f1;
+}
+.m-nav{
+  height:45px;
+  font-size:18px;
+}
+.m-nav ul li{
+  width:80px;
+  height:inherit;
+  margin:0 30px;
+  float:left;
+/*  text-align: center;*/
+  color:#fff;
+}
+.m-nav ul li a{
+  display: block;
+  color:#fff;
+}
+.m-nav ul li:first-child{
+  margin-left:0
+}
+.m-info{
+  height: 50px;
+  margin-bottom:15px;
+}
+.m-search{
+  height:40px;
+  position: absolute;
+}
+.m-search-box{
+  width:@headerRightWidth - 55;
+  height:40px;
+  line-height: 40px;
+  padding:0 40px 0 15px;
+  border:none;
+  background: #2c3033;
+  color:#fff;
+  border-radius: 3px;
+  font-size:14px;
+}
+
+.squartFun(@value:36px){
+   width: @value;
+   height:@value;
+}
+.m-info{
+  padding-top: 5px;
+}
+.m-info-avatar{
+  .squartFun();
+  border-radius:50%;
+  background: #eee;
+  overflow:hidden;
+}
+.m-info-avatar img{
+  .squartFun();
+  border:none;
+}
+
+.u-icon-search{
+  .squartFun(30px);
+  background: #d4d4d4;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+}
+.m-info-list{
+  margin-left:5px;
+  margin-top:5px;
+}
+.m-info-list select{
+  width: 115px;
+  height: 25px;
+}
+.m-info-message{
+  .squartFun(24px);
+  background: #000;
+  overflow:hidden;
+  margin-left:10px;
+  margin-top:5px;
+}
+.m-info-message img{
+  .squartFun(24px);
+}
+.m-info-language{
+
+}
+.m-info-list-select{
+
+}
+.m-info-list-select.account-select{
+
+}
+.m-info-language-select{
+  margin-left:5px;
+  margin-top:5px;
+  height: 24px;
+  line-height: 24px;
+}
+@placeColor:#fff;
+::-webkit-input-placeholder { /* WebKit browsers */
+  color:@placeColor;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:@placeColor;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:@placeColor;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color:@placeColor;
+}
+/* header end */
+/* content start */
+@main-Left:770px;
+@main-Right:@bodyWidth - @main-Left - 35;
+.g-main-left{
+  width:@main-Left;
+}
+.g-main-right{
+  width:@main-Right;
+}
+
+/* carousel */
+.sameMar-Hgt(@height:440px,@marbottom:25px){
+  height:@height;
+  margin-bottom:@marbottom;
+}
+.m-carousel{
+  .sameMar-Hgt();
+  background: #26292e;
+}
+.m-hot-news{
+  .sameMar-Hgt();
+  background: #26292e;
+  color:#fff;
+  font-size:12px;
+}
+.samelineXheight(@value){
+  height:@value;
+  line-height:@value;
+}
+.m-list-common{
+
+}
+.m-hot-news-title{
+/*  padding: 0 15px;
+  .samelineXheight(50px);
+  background: #1d2025;
+  margin-bottom:20px;*/
+}
+.m-list-common-title{
+  padding: 0 15px;
+  .samelineXheight(50px);
+  background: #1d2025;
+  margin-bottom:20px;
+}
+
+.m-list-common-title h4{
+  display: inline-block;
+  color:#f1f1f1;
+  font-size: 14px;
+  font-weight: 100;
+}
+.m-list-common-title i{
+  display: inline-block;
+  .squartFun(8px);
+  margin-right:10px;
+  background: #1592e2;
+}
+.m-hot-news-topic{
+  width: 245px;
+  margin: 0 auto 15px auto;
+ color:#fff;
+}
+.m-hot-news-topic img{
+  width: 245px;
+  height: 110px;
+  margin: 0 auto;
+  display: block;
+}
+.m-hot-news-topic p{
+  .samelineXheight(20px);
+  font-size:12px;
+  padding:5px 10px;
+}
+.m-hot-news-list{
+  width: 245px;
+  margin: 0 auto;
+}
+.m-hot-news-list-article{
+
+}
+.m-hot-news-list-article li{
+  margin-bottom:20px;
+  overflow: hidden;
+}
+.m-hot-news-list-article li img{
+  width: 90px;
+  height:50px;
+}
+.m-hot-news-text{
+  width:140px;
+}
+.m-hot-news-text .u-pat-text{
+  height: 32px;
+  margin-bottom: 5px;
+  overflow: hidden;
+}
+.m-hot-news-text .u-pat-time{
+  height: 16px;
+  color:#999;
+  overflow: hidden;
+}
+
+
+/* content end */
+
+/* footer start */
+
+/* footer end */
+

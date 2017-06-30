@@ -36,6 +36,10 @@ body {
   margin-bottom: 30px;
   background: #f1f1f1;
 }
+.m-logo img {
+  width: 100%;
+  height: 100%;
+}
 .m-nav {
   height: 45px;
   font-size: 18px;
@@ -391,6 +395,7 @@ body {
   line-height: 1.2;
   height: 30px;
   overflow: hidden;
+  text-align: center;
 }
 .m-team-rank {
   background: #1c1d1f;
@@ -452,34 +457,32 @@ body {
 }
 .g-footer {
   border-top: 1px solid #34393f;
-  height: 160px;
+  /* height:160px;*/
   background: #1c1d1f;
 }
 .g-footer .m-footer-bar {
   height: 80px;
 }
 .g-footer .m-footer-link {
-  /* display: flex;*/
   margin: 0 auto;
   width: 1090px;
-  padding: 20px 0;
+  padding: 50px 0;
 }
-/*.g-footer .m-footer-flex{
-  flex:1;
-  background: #9b2c25;
-  height: 100px;
-}*/
 .g-footer .m-footer-link ul {
   display: flex;
 }
 .g-footer .m-footer-link ul li {
   flex: 1;
-  height: 100px;
-  background: #9b2c25;
+  text-align: center;
+}
+.g-footer .m-footer-link ul li a {
+  color: #939393;
 }
 .g-footer .m-footer-link ul li img.u-icon-footer {
+  display: inline-block;
   width: 24px;
   height: 24px;
+  margin-bottom: 2px;
 }
 /* content end */
 /* footer start */

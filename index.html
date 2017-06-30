@@ -15,9 +15,9 @@
     <div class="g-header">
         <div class="g-header-left f-fl">
             <div class="m-logo"></div>
-            <div class="m-nav">
+            <div class="m-nav" >
                 <ul>
-                    <li v-for="item in navList"><a v-bind:href="item.link">{{item.title}}</a></li>
+                    <li v-for="item in navList" ><a v-bind:href="item.link" v-cloak>{{item.title}}</a></li>
                 </ul>
             </div>
         </div>
@@ -61,7 +61,7 @@
                 <div class="m-matches">
                     <div class="m-matches-title">
                         <ul>
-                            <li>全部比赛</li>
+                            <li class="u-title-active">全部比赛</li>
                             <li>DOTA2</li>
                             <li>王者荣耀</li>
                         </ul>
@@ -69,7 +69,7 @@
                     <div class="m-matches-container">
                        <div class="m-matches-container-title">
                           <ul>
-                              <li>全部</li>
+                              <li class="u-child-active">全部</li>
                               <li>未开始</li>
                               <li>已结束</li>
                           </ul>
@@ -77,23 +77,157 @@
                         <div class="m-matches-container-content">
                             <ul>
                                 <li>
-                                    <div class="u-matches-title"></div>
-                                    <div class="u-matches-content"></div>
+                                    <div class="u-matches-title f-oh">
+                                        <span class="u-matches-name  f-fl">
+                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                        </span>
+                                        <span class="u-matches-time f-fr">6小时后</span>
+                                    </div>
+                                    <div class="u-matches-content">
+                                          <div class="u-matches-team-left f-fl">
+                                              <img src="" alt="" class="u-matches-team-img">
+                                              <span class="u-matches-teamname">Planet Odd</span>
+                                          </div>
+                                           <div class="u-divide-line"></div>
+                                          <div class="u-matches-team-right f-fr">
+                                              <span class="u-matches-teamname">Planet Odd</span>
+                                              <img src="" alt="" class="u-matches-team-img">
+                                          </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="u-matches-title f-oh">
+                                        <span class="u-matches-name  f-fl">
+                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                        </span>
+                                        <span class="u-matches-time f-fr">6小时后</span>
+                                    </div>
+                                    <div class="u-matches-content">
+                                        <div class="u-matches-team-left f-fl">
+                                            <img src="" alt="" class="u-matches-team-img">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                        </div>
+                                        <div class="u-divide-line"></div>
+                                        <div class="u-matches-team-right f-fr">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                            <img src="" alt="" class="u-matches-team-img">
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="u-matches-title f-oh">
+                                        <span class="u-matches-name  f-fl">
+                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                        </span>
+                                        <span class="u-matches-time f-fr">6小时后</span>
+                                    </div>
+                                    <div class="u-matches-content">
+                                        <div class="u-matches-team-left f-fl">
+                                            <img src="" alt="" class="u-matches-team-img">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                        </div>
+                                        <div class="u-divide-line"></div>
+                                        <div class="u-matches-team-right f-fr">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                            <img src="" alt="" class="u-matches-team-img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="u-matches-title f-oh">
+                                        <span class="u-matches-name  f-fl">
+                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                        </span>
+                                        <span class="u-matches-time f-fr">6小时后</span>
+                                    </div>
+                                    <div class="u-matches-content">
+                                        <div class="u-matches-team-left f-fl">
+                                            <img src="" alt="" class="u-matches-team-img">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                        </div>
+                                        <div class="u-divide-line"></div>
+                                        <div class="u-matches-team-right f-fr">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                            <img src="" alt="" class="u-matches-team-img">
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="u-matches-title f-oh">
+                                        <span class="u-matches-name  f-fl">
+                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                        </span>
+                                        <span class="u-matches-time f-fr">6小时后</span>
+                                    </div>
+                                    <div class="u-matches-content">
+                                        <div class="u-matches-team-left f-fl">
+                                            <img src="" alt="" class="u-matches-team-img">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                        </div>
+                                        <div class="u-divide-line"></div>
+                                        <div class="u-matches-team-right f-fr">
+                                            <span class="u-matches-teamname">Planet Odd</span>
+                                            <img src="" alt="" class="u-matches-team-img">
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="m-store">
+                <div class="m-store-hot">
                     <div class="m-list-common-title">
                         <i></i>
                         <h4>商城热门</h4>
                     </div>
-                    <div class="m-store-content">
+                    <div class="m-store-hot-content">
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/1111582.jpg" alt="">
+                                    <div class="u-title-transparent">
+                                        <p>无双鬼魅</p>
+                                        <p>10000 D币</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/1111582.jpg" alt="">
+                                    <div class="u-title-transparent">
+                                        <p>无双鬼魅</p>
+                                        <p>10000 D币</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/1111582.jpg" alt="">
+                                    <div class="u-title-transparent">
+                                        <p>无双鬼魅</p>
+                                        <p>10000 D币</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/1111582.jpg" alt="">
+                                    <div class="u-title-transparent">
+                                        <p>无双鬼魅</p>
+                                        <p>10000 D币</p>
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img src="./assets/img/1111582.jpg" alt="">
+                                    <div class="u-title-transparent">
+                                        <p>无双鬼魅</p>
+                                        <p>10000 D币</p>
+                                    </div>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -105,19 +239,29 @@
                     <div class="m-lastest-matches-content">
                         <ul>
                             <li>
-                                <img src="" alt=""><p></p>
+                               <a href="#" target="_blank"><img src="" alt="">
+                                   <p>联赛联赛联赛联赛联赛</p>
+                               </a>
                             </li>
                             <li>
-                                <img src="" alt=""><p></p>
+                                <a href="#" target="_blank"><img src="" alt="">
+                                    <p>联赛联赛联赛联赛联赛</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="" alt=""><p></p>
+                                <a href="#" target="_blank"><img src="" alt="">
+                                    <p>联赛联赛联赛联赛联赛</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="" alt=""><p></p>
+                                <a href="#" target="_blank"><img src="" alt="">
+                                    <p>联赛联赛联赛联赛联赛</p>
+                                </a>
                             </li>
                             <li>
-                                <img src="" alt=""><p></p>
+                                <a href="#" target="_blank"><img src="" alt="">
+                                    <p>联赛联赛</p>
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -177,6 +321,15 @@
                         <h4>战队排名</h4>
                     </div>
                      <div class="m-team-rank-content">
+                         <table class="u-team-rank-table">
+                             <tbody>
+                             <tr>
+                                 <td>&nbsp;</td>
+
+                             </tr>
+                             </tbody>
+
+                         </table>
 
                      </div>
                 </div>
@@ -212,9 +365,8 @@
 
 <script src="./assets/js/vue.js"></script>
 <script>
-    '首页','资讯','竞猜','商城','社区','APP'
 var app=new Vue({
-    el:'.m-nav',
+    el:'.g-wrap-header',
     data:function () {
      return {
          navList:[

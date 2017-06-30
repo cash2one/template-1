@@ -122,6 +122,12 @@ body {
   width: 24px;
   height: 24px;
 }
+i.u-info-message-icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background: url('../img/youxiang.gif') no-repeat center;
+}
 .m-info-language-select {
   margin-left: 5px;
   margin-top: 5px;
@@ -167,9 +173,9 @@ body {
 }
 .m-hot-news-title {
   /*  padding: 0 15px;
-  .samelineXheight(50px);
-  background: #1d2025;
-  margin-bottom:20px;*/
+    .samelineXheight(50px);
+    background: #1d2025;
+    margin-bottom:20px;*/
 }
 .m-list-common-title {
   padding: 0 15px;

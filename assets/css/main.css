@@ -1,7 +1,7 @@
 body {
   font-size: 14px;
   font-family: 'Microsoft YaHei', 'simsun', sans-serif;
-  background: #1e1e20 url(../img/tempbg.jpg) no-repeat center top fixed;
+  background: #1e1e20 url(../img/tempbg.jpg) no-repeat center top;
   /* background: linear-gradient(to bottom,#fff 0%, #232323 50%, #1e1e20 100%);*/
 }
 .g-wrap {

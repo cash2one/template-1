@@ -1,16 +1,9 @@
-/*
-统一处理：建议在这个位置统一调用背景图（这里指多个布局或模块或元件共用的图）和清除浮动（这里指通用性较高的布局、模块、元件内的清除）等统一设置处理的样式！
-布局（grid）（.g-）：将页面分割为几个大块，通常有头部、主体、主栏、侧栏、尾部等！
-模块（module）（.m-）：通常是一个语义化的可以重复使用的较大的整体！比如导航、登录、注册、各种列表、评论、搜索等！
-元件（unit）（.u-）：通常是一个不可再分的较为小巧的个体，通常被重复用于各种模块中！比如按钮、输入框、loading、图标等！
-功能（function）（.f-）：为方便一些常用样式的使用，我们将这些使用率较高的样式剥离出来，按需使用，通常这些选择器具有固定样式表现，比如清除浮动等！不可滥用！
-皮肤（skin）（.s-）：如果你需要把皮肤型的样式抽离出来，通常为文字色、背景色（图）、边框色等，非换肤型网站通常只提取文字色！非换肤型网站不可滥用此类！
-状态（.z-）：为状态类样式加入前缀，统一标识，方便识别，她只能组合使用或作为后代出现（.u-ipt.z-dis{}，.m-list li.z-sel{}），具体详见命名规则的扩展相关项。
-*/
+
 @mainfont:14px;@base100:100px;@center:0 auto;@moduleBgColor:#1c1d1f;
 body{
   font-size: @mainfont;font-family: 'Microsoft YaHei','simsun',sans-serif;
-  background: #63666d;
+  background: #1e1e20 url(../img/tempbg.jpg) no-repeat center top fixed;
+  /* background: linear-gradient(to bottom,#fff 0%, #232323 50%, #1e1e20 100%);*/
 }
 @headerWidth:1090px;
 @bodyWidth:1090px;
@@ -25,11 +18,11 @@ body{
 }
 /* header start  */
 
-.g-wrap-header{
+ .g-header{
   background: #000;
   margin-bottom: 25px;
 }
-.g-header{
+.g-header-wrap{
   width: @headerWidth;
   height:@base100 + 26;
   margin: @center;
@@ -208,7 +201,6 @@ body{
   padding: 0 15px;
   .samelineXheight(50px);
   background: #1d2025;
-  margin-bottom:20px;
 }
 
 .m-list-common-title h4{
@@ -225,7 +217,7 @@ body{
 }
 .m-hot-news-topic{
   width: 245px;
-  margin: 0 auto 15px auto;
+  margin: 20px auto 15px auto;
  color:#fff;
 }
 .m-hot-news-topic img{
@@ -442,9 +434,92 @@ body{
 }
 .m-team-rank{
   background: @moduleBgColor;
+  .moduleMarBottom();
+}
+.m-team-rank-content{
+  background: @moduleBgColor;
 }
 .u-team-rank-table{
   width: 100%;
+  color:#fff;
+}
+.u-team-rank-table td{
+  text-align: center;
+}
+.u-team-rank-table thead td{
+  .samelineXheight(30px)
+}
+.u-warteam-icon{
+  width: 32px;
+  height: 32px;
+  line-height: 32px;
+  vertical-align: middle;
+  display: inline-block;
+}
+.u-warteam-name{
+  vertical-align: middle;
+}
+.u-team-rank-table .u-team-rank-tbody tr{
+  border-bottom:1px solid #141414;
+}
+.u-team-rank-table .u-team-rank-tbody td{
+  .samelineXheight(60px);
+  border-bottom:1px solid #141414;
+}
+.u-team-rank-table thead tr{
+  background: #131418;
+}
+.m-special{
+  background:@moduleBgColor;
+}
+.m-special-content{
+  padding: 10px;
+}
+.m-special-content ul li{
+  display: inline-table;
+  width: 120px;
+  margin: 0 5px 15px 5px;
+  text-align: center;
+ }
+.m-special-content ul li a{
+  color:#fff;
+}
+.m-special-content ul li img{
+  width: 120px;
+  height: 70px;
+}
+.g-footer{
+  border-top:1px solid #34393f;
+  height:160px;
+  background: @moduleBgColor;
+}
+.g-footer .m-footer-bar{
+  height:80px;
+
+}
+.g-footer .m-footer-link{
+/* display: flex;*/
+  margin: 0 auto;
+  width: @bodyWidth;
+  padding:20px 0;
+}
+/*.g-footer .m-footer-flex{
+  flex:1;
+  background: #9b2c25;
+  height: 100px;
+}*/
+.g-footer .m-footer-link ul{
+  display: flex;
+}
+.g-footer .m-footer-link ul li{
+  flex:1;
+  height: 100px;
+  background: #9b2c25;
+}
+.g-footer .m-footer-link ul li img.u-icon-footer{
+  width: 24px;
+  height: 24px;
+
 }
 /* content end */
 

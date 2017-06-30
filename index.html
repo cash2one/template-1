@@ -11,375 +11,500 @@
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 <body>
-<div class="g-wrap-header">
-    <div class="g-header">
+<div class="g-header">
+    <div class="g-header-wrap">
         <div class="g-header-left f-fl">
             <div class="m-logo"></div>
-            <div class="m-nav" >
+            <div class="m-nav">
                 <ul>
-                    <li v-for="item in navList" ><a v-bind:href="item.link" v-cloak>{{item.title}}</a></li>
+                    <li v-for="item in navList"><a v-bind:href="item.link" v-cloak>{{item.title}}</a></li>
                 </ul>
             </div>
         </div>
         <div class="g-header-right f-fr">
             <div class="m-info">
                 <div class="m-info-avatar f-fl">
-                    <img src="./assets/img/1111582.jpg" alt="" >
+                    <img src="./assets/img/1111582.jpg" alt="">
                 </div>
-                 <div class="m-info-list f-fl">
-                     <select name="" id="formSelect" class="m-info-list-select account-select">
-                         <option value="">dfdj1234</option>
-                         <option value=""> dsd</option>
-                         <option value=""> dsd</option>
-                     </select>
-                 </div>
-                 <div class="m-info-message f-fl">
-                     <img src="" alt="">
-                 </div>
-                 <div class="m-info-language f-fl">
-                     <select name="" id="" class="m-info-language-select">
-                         <option value="">中文</option>
-                         <option value="">English</option>
-                     </select>
-                 </div>
+                <div class="m-info-list f-fl">
+                    <select name="" id="formSelect" class="m-info-list-select account-select">
+                        <option value="">dfdj1234</option>
+                        <option value=""> dsd</option>
+                        <option value=""> dsd</option>
+                    </select>
+                </div>
+                <div class="m-info-message f-fl">
+                    <img src="" alt="">
+                </div>
+                <div class="m-info-language f-fl">
+                    <select name="" id="" class="m-info-language-select">
+                        <option value="">中文</option>
+                        <option value="">English</option>
+                    </select>
+                </div>
             </div>
             <div class="m-search">
                 <input type="text" class="m-search-box" placeholder="请输入查询信息">
-                <a  href="javascript:void(0);" class="u-icon-search"></a>
+                <a href="javascript:void(0);" class="u-icon-search"></a>
             </div>
         </div>
     </div>
 </div>
-
-
-<div class="g-wrap">
-    <div class="g-body">
-        <div class="g-main f-oh">
-            <div class="g-main-left f-fl">
-                <div class="m-carousel">
+<div class="g-wrap f-oh">
+    <div class="g-main-left f-fl">
+        <div class="m-carousel">
+        </div>
+        <div class="m-matches">
+            <div class="m-matches-title">
+                <ul>
+                    <li class="u-title-active">全部比赛</li>
+                    <li>DOTA2</li>
+                    <li>王者荣耀</li>
+                </ul>
+            </div>
+            <div class="m-matches-container">
+                <div class="m-matches-container-title">
+                    <ul>
+                        <li class="u-child-active">全部</li>
+                        <li>未开始</li>
+                        <li>已结束</li>
+                    </ul>
                 </div>
-                <div class="m-matches">
-                    <div class="m-matches-title">
-                        <ul>
-                            <li class="u-title-active">全部比赛</li>
-                            <li>DOTA2</li>
-                            <li>王者荣耀</li>
-                        </ul>
-                    </div>
-                    <div class="m-matches-container">
-                       <div class="m-matches-container-title">
-                          <ul>
-                              <li class="u-child-active">全部</li>
-                              <li>未开始</li>
-                              <li>已结束</li>
-                          </ul>
-                       </div>
-                        <div class="m-matches-container-content">
-                            <ul>
-                                <li>
-                                    <div class="u-matches-title f-oh">
+                <div class="m-matches-container-content">
+                    <ul>
+                        <li>
+                            <div class="u-matches-title f-oh">
                                         <span class="u-matches-name  f-fl">
-                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                            <i class="u-icon-team-all"></i><span
+                                                class="u-icon-text">Galaxy Biete(Bo1)</span>
                                         </span>
-                                        <span class="u-matches-time f-fr">6小时后</span>
-                                    </div>
-                                    <div class="u-matches-content">
-                                          <div class="u-matches-team-left f-fl">
-                                              <img src="" alt="" class="u-matches-team-img">
-                                              <span class="u-matches-teamname">Planet Odd</span>
-                                          </div>
-                                           <div class="u-divide-line"></div>
-                                          <div class="u-matches-team-right f-fr">
-                                              <span class="u-matches-teamname">Planet Odd</span>
-                                              <img src="" alt="" class="u-matches-team-img">
-                                          </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="u-matches-title f-oh">
+                                <span class="u-matches-time f-fr">6小时后</span>
+                            </div>
+                            <div class="u-matches-content">
+                                <div class="u-matches-team-left f-fl">
+                                    <img src="" alt="" class="u-matches-team-img">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                </div>
+                                <div class="u-divide-line"></div>
+                                <div class="u-matches-team-right f-fr">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                    <img src="" alt="" class="u-matches-team-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="u-matches-title f-oh">
                                         <span class="u-matches-name  f-fl">
-                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                            <i class="u-icon-team-all"></i><span
+                                                class="u-icon-text">Galaxy Biete(Bo1)</span>
                                         </span>
-                                        <span class="u-matches-time f-fr">6小时后</span>
-                                    </div>
-                                    <div class="u-matches-content">
-                                        <div class="u-matches-team-left f-fl">
-                                            <img src="" alt="" class="u-matches-team-img">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                        </div>
-                                        <div class="u-divide-line"></div>
-                                        <div class="u-matches-team-right f-fr">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                            <img src="" alt="" class="u-matches-team-img">
-                                        </div>
-                                    </div>
-                                </li>
+                                <span class="u-matches-time f-fr">6小时后</span>
+                            </div>
+                            <div class="u-matches-content">
+                                <div class="u-matches-team-left f-fl">
+                                    <img src="" alt="" class="u-matches-team-img">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                </div>
+                                <div class="u-divide-line"></div>
+                                <div class="u-matches-team-right f-fr">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                    <img src="" alt="" class="u-matches-team-img">
+                                </div>
+                            </div>
+                        </li>
 
-                                <li>
-                                    <div class="u-matches-title f-oh">
+                        <li>
+                            <div class="u-matches-title f-oh">
                                         <span class="u-matches-name  f-fl">
-                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                            <i class="u-icon-team-all"></i><span
+                                                class="u-icon-text">Galaxy Biete(Bo1)</span>
                                         </span>
-                                        <span class="u-matches-time f-fr">6小时后</span>
-                                    </div>
-                                    <div class="u-matches-content">
-                                        <div class="u-matches-team-left f-fl">
-                                            <img src="" alt="" class="u-matches-team-img">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                        </div>
-                                        <div class="u-divide-line"></div>
-                                        <div class="u-matches-team-right f-fr">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                            <img src="" alt="" class="u-matches-team-img">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="u-matches-title f-oh">
+                                <span class="u-matches-time f-fr">6小时后</span>
+                            </div>
+                            <div class="u-matches-content">
+                                <div class="u-matches-team-left f-fl">
+                                    <img src="" alt="" class="u-matches-team-img">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                </div>
+                                <div class="u-divide-line"></div>
+                                <div class="u-matches-team-right f-fr">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                    <img src="" alt="" class="u-matches-team-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="u-matches-title f-oh">
                                         <span class="u-matches-name  f-fl">
-                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                            <i class="u-icon-team-all"></i><span
+                                                class="u-icon-text">Galaxy Biete(Bo1)</span>
                                         </span>
-                                        <span class="u-matches-time f-fr">6小时后</span>
-                                    </div>
-                                    <div class="u-matches-content">
-                                        <div class="u-matches-team-left f-fl">
-                                            <img src="" alt="" class="u-matches-team-img">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                        </div>
-                                        <div class="u-divide-line"></div>
-                                        <div class="u-matches-team-right f-fr">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                            <img src="" alt="" class="u-matches-team-img">
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="u-matches-title f-oh">
+                                <span class="u-matches-time f-fr">6小时后</span>
+                            </div>
+                            <div class="u-matches-content">
+                                <div class="u-matches-team-left f-fl">
+                                    <img src="" alt="" class="u-matches-team-img">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                </div>
+                                <div class="u-divide-line"></div>
+                                <div class="u-matches-team-right f-fr">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                    <img src="" alt="" class="u-matches-team-img">
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="u-matches-title f-oh">
                                         <span class="u-matches-name  f-fl">
-                                            <i class="u-icon-team-all"></i><span class="u-icon-text">Galaxy Biete(Bo1)</span>
+                                            <i class="u-icon-team-all"></i><span
+                                                class="u-icon-text">Galaxy Biete(Bo1)</span>
                                         </span>
-                                        <span class="u-matches-time f-fr">6小时后</span>
-                                    </div>
-                                    <div class="u-matches-content">
-                                        <div class="u-matches-team-left f-fl">
-                                            <img src="" alt="" class="u-matches-team-img">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                        </div>
-                                        <div class="u-divide-line"></div>
-                                        <div class="u-matches-team-right f-fr">
-                                            <span class="u-matches-teamname">Planet Odd</span>
-                                            <img src="" alt="" class="u-matches-team-img">
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                <span class="u-matches-time f-fr">6小时后</span>
+                            </div>
+                            <div class="u-matches-content">
+                                <div class="u-matches-team-left f-fl">
+                                    <img src="" alt="" class="u-matches-team-img">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                </div>
+                                <div class="u-divide-line"></div>
+                                <div class="u-matches-team-right f-fr">
+                                    <span class="u-matches-teamname">Planet Odd</span>
+                                    <img src="" alt="" class="u-matches-team-img">
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="m-store-hot">
+            <div class="m-list-common-title">
+                <i></i>
+                <h4>商城热门</h4>
+            </div>
+            <div class="m-store-hot-content">
+                <ul>
+                    <li>
+                        <a href="">
+                            <img src="./assets/img/1111582.jpg" alt="">
+                            <div class="u-title-transparent">
+                                <p>无双鬼魅</p>
+                                <p>10000 D币</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./assets/img/1111582.jpg" alt="">
+                            <div class="u-title-transparent">
+                                <p>无双鬼魅</p>
+                                <p>10000 D币</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./assets/img/1111582.jpg" alt="">
+                            <div class="u-title-transparent">
+                                <p>无双鬼魅</p>
+                                <p>10000 D币</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./assets/img/1111582.jpg" alt="">
+                            <div class="u-title-transparent">
+                                <p>无双鬼魅</p>
+                                <p>10000 D币</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <img src="./assets/img/1111582.jpg" alt="">
+                            <div class="u-title-transparent">
+                                <p>无双鬼魅</p>
+                                <p>10000 D币</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="m-lastest-matches">
+            <div class="m-list-common-title">
+                <i></i>
+                <h4>近期联赛</h4>
+            </div>
+            <div class="m-lastest-matches-content">
+                <ul>
+                    <li>
+                        <a href="#" target="_blank"><img src="" alt="">
+                            <p>联赛联赛联赛联赛联赛</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="" alt="">
+                            <p>联赛联赛联赛联赛联赛</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="" alt="">
+                            <p>联赛联赛联赛联赛联赛</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="" alt="">
+                            <p>联赛联赛联赛联赛联赛</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" target="_blank"><img src="" alt="">
+                            <p>联赛联赛</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="g-main-right f-fr">
+        <div class="m-hot-news m-list-common">
+            <div class="m-list-common-title">
+                <i></i>
+                <h4>热门资讯</h4>
+            </div>
+            <div class="m-hot-news-topic">
+                <img src="" alt="">
+                <p>决赛回顾</p>
+            </div>
+            <div class="m-hot-news-list">
+                <ul class="m-hot-news-list-article">
+                    <li>
+                        <img src="" alt="" class="f-fl">
+                        <div class="m-hot-news-text f-fr">
+                            <p class="u-pat-text">
+                                OB天团解说ti中国预选赛！OB天团解说ti中国预选赛！
+                            </p>
+                            <p class="u-pat-time">
+                                2天前
+                            </p>
                         </div>
-                    </div>
-                </div>
-                <div class="m-store-hot">
-                    <div class="m-list-common-title">
-                        <i></i>
-                        <h4>商城热门</h4>
-                    </div>
-                    <div class="m-store-hot-content">
-                        <ul>
-                            <li>
-                                <a href="">
-                                    <img src="./assets/img/1111582.jpg" alt="">
-                                    <div class="u-title-transparent">
-                                        <p>无双鬼魅</p>
-                                        <p>10000 D币</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./assets/img/1111582.jpg" alt="">
-                                    <div class="u-title-transparent">
-                                        <p>无双鬼魅</p>
-                                        <p>10000 D币</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./assets/img/1111582.jpg" alt="">
-                                    <div class="u-title-transparent">
-                                        <p>无双鬼魅</p>
-                                        <p>10000 D币</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./assets/img/1111582.jpg" alt="">
-                                    <div class="u-title-transparent">
-                                        <p>无双鬼魅</p>
-                                        <p>10000 D币</p>
-                                    </div>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="">
-                                    <img src="./assets/img/1111582.jpg" alt="">
-                                    <div class="u-title-transparent">
-                                        <p>无双鬼魅</p>
-                                        <p>10000 D币</p>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="m-lastest-matches">
-                    <div class="m-list-common-title">
-                        <i></i>
-                        <h4>近期联赛</h4>
-                    </div>
-                    <div class="m-lastest-matches-content">
-                        <ul>
-                            <li>
-                               <a href="#" target="_blank"><img src="" alt="">
-                                   <p>联赛联赛联赛联赛联赛</p>
-                               </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><img src="" alt="">
-                                    <p>联赛联赛联赛联赛联赛</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><img src="" alt="">
-                                    <p>联赛联赛联赛联赛联赛</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><img src="" alt="">
-                                    <p>联赛联赛联赛联赛联赛</p>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" target="_blank"><img src="" alt="">
-                                    <p>联赛联赛</p>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="g-main-right f-fr">
-                 <div class="m-hot-news m-list-common">
-                     <div class="m-list-common-title">
-                         <i></i>
-                         <h4>热门资讯</h4>
-                     </div>
-                     <div class="m-hot-news-topic">
-                         <img src="" alt="">
-                         <p>决赛回顾</p>
-                     </div>
-                     <div class="m-hot-news-list">
-                         <ul class="m-hot-news-list-article">
-                             <li>
-                                 <img src="" alt="" class="f-fl">
-                                 <div class="m-hot-news-text f-fr">
-                                     <p class="u-pat-text">
-                                         OB天团解说ti中国预选赛！OB天团解说ti中国预选赛！
-                                     </p>
-                                     <p class="u-pat-time">
-                                         2天前
-                                     </p>
-                                 </div>
-                             </li>
-                             <li>
-                                 <img src="" alt="" class="f-fl">
-                                 <div class="m-hot-news-text f-fr">
-                                     <p class="u-pat-text">
-                                         OB天团解说ti中国预选赛！OB天团解说ti中国预选赛！
-                                     </p>
-                                     <p class="u-pat-time">
-                                         2天前
-                                     </p>
-                                 </div>
-                             </li>
-                             <li>
-                                 <img src="" alt="" class="f-fl">
-                                 <div class="m-hot-news-text f-fr">
-                                     <p class="u-pat-text">
-                                         OB天团解说ti中国预选赛！OB天团解说ti中国预选赛！
-                                     </p>
-                                     <p class="u-pat-time">
-                                         2天前
-                                     </p>
-                                 </div>
-                             </li>
-                         </ul>
-                     </div>
-                 </div>
-                 <div class="m-team-rank">
-                    <div class="m-list-common-title">
-                        <i></i>
-                        <h4>战队排名</h4>
-                    </div>
-                     <div class="m-team-rank-content">
-                         <table class="u-team-rank-table">
-                             <tbody>
-                             <tr>
-                                 <td>&nbsp;</td>
-
-                             </tr>
-                             </tbody>
-
-                         </table>
-
-                     </div>
-                </div>
-                <div class="m-special">
-                    <div class="m-list-common-title">
-                        <i></i>
-                        <h4>活动专题</h4>
-                    </div>
-                    <div class="m-special-content">
-                        <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
-                </div>
-
+                    </li>
+                    <li>
+                        <img src="" alt="" class="f-fl">
+                        <div class="m-hot-news-text f-fr">
+                            <p class="u-pat-text">
+                                OB天团解说ti中国预选赛！OB天团解说ti中国预选赛！
+                            </p>
+                            <p class="u-pat-time">
+                                2天前
+                            </p>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="" alt="" class="f-fl">
+                        <div class="m-hot-news-text f-fr">
+                            <p class="u-pat-text">
+                                OB天团解说ti中国预选赛！OB天团解说ti中国预选赛！
+                            </p>
+                            <p class="u-pat-time">
+                                2天前
+                            </p>
+                        </div>
+                    </li>
+                </ul>
             </div>
         </div>
-        <div class="g-sd">
+        <div class="m-team-rank">
+            <div class="m-list-common-title">
+                <i></i>
+                <h4>战队排名</h4>
+            </div>
+            <div class="m-team-rank-content">
+                <table class="u-team-rank-table">
+                    <thead>
+                    <tr>
+                        <td>排名</td>
+                        <td>战队</td>
+                        <td>战斗力</td>
+                    </tr>
+                    </thead>
+                    <tbody class="u-team-rank-tbody">
+                    <tr>
+                        <td><span>1</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>2</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>3</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>4</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>5</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>6</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>7</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>8</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>9</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    <tr>
+                        <td><span>10</span></td>
+                        <td>
+                            <img src="" class="u-warteam-icon u-pos" />
+                            <span class="u-warteam-name">Happy</span>
+                        </td>
+                        <td><span>8785</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
-    </div>
-    <div class="g-footer">
-        <div class="m-footer-bar">
-
-        </div>
-        <div class="m-footer-link">
-
+        <div class="m-special">
+            <div class="m-list-common-title">
+                <i></i>
+                <h4>活动专题</h4>
+            </div>
+            <div class="m-special-content">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="" alt=""><p>招聘</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" alt=""><p>新人福利</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" alt=""><p>招聘</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="" alt=""><p>新人福利</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
 
     </div>
 </div>
+<div class="g-footer">
+    <div class="m-footer-bar">
 
+    </div>
+    <div class="m-footer-link">
+       <!-- <div class="m-footer-flex"></div>
+        <div class="m-footer-flex"></div>
+        <div class="m-footer-flex"></div>-->
+        <ul>
+            <li>
+                <img src="" alt="" class="u-icon-footer">
+                <p>商务合作</p>
+            </li>
+            <li>
+                <img src="" alt="" class="u-icon-footer">
+                <p>联系我们</p>
+            </li>
+            <li>
+                <img src="" alt="" class="u-icon-footer">
+                <p>常见问题</p>
+            </li>
+            <li>
+                <img src="" alt="" class="u-icon-footer">
+                <p>合作伙伴</p>
+            </li>
+            <li>
+                <img src="" alt="" class="u-icon-footer">
+                <p>加入我们</p>
+            </li>
+            <li>
+                <img src="" alt="" class="u-icon-footer">
+                <p>新浪微博</p>
+            </li>
+            <li>
+                <img src="" alt="" class="u-icon-footer">
+                <p>新手指导</p>
+            </li>
+        </ul>
+    </div>
+</div>
 <script src="./assets/js/vue.js"></script>
 <script>
-var app=new Vue({
-    el:'.g-wrap-header',
-    data:function () {
-     return {
-         navList:[
-             {title:'首页',link:'/index1'},
-             {title:'资讯',link:'/index2'},
-             {title:'竞猜',link:'/index3'},
-             {title:'商城',link:'/index4'},
-             {title:'社区',link:'/index5'},
-             {title:'APP',link:'/index6'}
-         ]
-     }
-    }
-})
+    var app = new Vue({
+        el: '.g-header-wrap',
+        data: function () {
+            return {
+                navList: [
+                    {title: '首页', link: '/index1'},
+                    {title: '资讯', link: '/index2'},
+                    {title: '竞猜', link: '/index3'},
+                    {title: '商城', link: '/index4'},
+                    {title: '社区', link: '/index5'},
+                    {title: 'APP', link: '/index6'}
+                ]
+            }
+        }
+    })
 </script>
 
 </body>

@@ -2,12 +2,12 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title><%= htmlWebpackPlugin.options.title %></title>
+    <title>Index</title>
     <meta name="keywords" content=""/>
     <meta name="description" content=""/>
     <meta name="viewport" content="width=device-width"/>
     <link rel="shortcut icon" href="./assets/img/favicon.ico"/>
-    <link rel="stylesheet" href="./dist/index.css?version=<%= htmlWebpackPlugin.options.version %>">
+    <link rel="stylesheet" href="./dist/index.css?version=1.0.2">
 </head>
 <body>
 <div class="g-header">
@@ -28,15 +28,18 @@
                     <img src="./assets/img/carousel/1111582.jpg" alt="">
                 </div>
                 <div class="m-info-list f-fl">
-                    <div class="dropdown" >
-                            <a href="#"  class="btn bg-tranparent dropdown-toggle " id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">dfdj1234<span class="caret"></span></a>
-                         <ul class="dropdown-menu fade" aria-labelledby="dropdownMenu1">
+                    <div class="dropdown">
+                        <button class="btn bg-tranparent dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                            dfdj1234
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                             <li><a href="#">dfdj1234</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
                        <!--     <li role="separator" class="divider"></li>-->
 
-                         </ul>
+                        </ul>
                     </div>
               <!--      <select name="" id="formSelect" class="m-info-list-select account-select">
                         <option value="">dfdj1234</option>
@@ -556,6 +559,6 @@
     })
 </script>
 <script src="./assets/js/jquery-3.2.1.js"></script>
-<script src="./dist/main.bundle.js?version=<%= htmlWebpackPlugin.options.version %>"></script>
+<script src="./dist/main.bundle.js?version=1.0.2"></script>
 </body>
 </html>

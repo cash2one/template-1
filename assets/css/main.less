@@ -2,18 +2,19 @@
 @base100: 100px;
 @center: 0 auto;
 @moduleBgColor: #1c1d1f;
+@import "function.css";
 body {
   font-size: @mainfont;
   font-family: 'Microsoft YaHei', 'simsun', sans-serif;
   background: #1e1e20 url(../img/tempbg.jpg) no-repeat center top fixed;
   /* background: linear-gradient(to bottom,#fff 0%, #232323 50%, #1e1e20 100%);*/
 }
-
 @headerWidth: 1090px;
 @bodyWidth: 1090px;
 @headerLeftWidth: 820px;
 @headerRightWidth: @headerWidth - @headerLeftWidth;
-.moduleMarBottom(@value:20px) {
+@defaulMargin:20px;
+.moduleMarBottom(@value:@defaulMargin) {
   margin-bottom: @value;
 }
 
@@ -163,7 +164,7 @@ body {
 i.u-info-message-icon {
   .squartFun(24px);
   display: inline-block;
-  background: url('../img/youxiang.gif') no-repeat center;
+  background: url(../img/youxiang.gif) no-repeat center;
 }
 
 .m-info-language {
@@ -174,8 +175,8 @@ i.u-info-message-icon {
 
 }
 
-.m-info-list-select.account-select {
-
+.bg-tranparent {
+  background:transparent;
 }
 
 .m-info-language-select {

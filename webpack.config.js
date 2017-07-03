@@ -45,7 +45,7 @@ module.exports = {
         new HtmlWebpackPlugin({
             title: 'Index',
             filename: '../test.html',
-            version:'1.0.2',
+            version:'1.0.3',
             template: './index.html',
             inject:false,
             hash:true

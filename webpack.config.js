@@ -8,7 +8,6 @@ function generateExtractLoaders (loaders) {
         return loader + '-loader' + (SOURCE_MAP ? '?sourceMap' : '')
     }).join('!')
 }
-
 module.exports = {
     entry: './assets/main.js',
     output: {
@@ -80,6 +79,5 @@ if (process.env.NODE_ENV === 'production') {
          new webpack.LoaderOptionsPlugin({
          minimize: true
          })
-
     ])
 }

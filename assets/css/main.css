@@ -512,7 +512,7 @@ i.u-info-message-icon {
 .g-footer .m-footer-link ul li a {
   color: #939393;
 }
-.g-footer .m-footer-link ul li .u-icon-footer {
+.u-icon-footer {
   display: inline-block;
   height: 20px;
   width: 20px;

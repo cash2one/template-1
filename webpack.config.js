@@ -10,7 +10,7 @@ function generateExtractLoaders (loaders) {
 }
 
 module.exports = {
-    entry: './assets/js/main.js',
+    entry: './assets/main.js',
     output: {
         path: path.resolve(__dirname,'dist'),
         publicPath: '/dist/',
@@ -74,11 +74,11 @@ if (process.env.NODE_ENV === 'production') {
         new webpack.optimize.UglifyJsPlugin({
             //sourceMap: true,
             compress: {
-                warnings:false
+                warnings:true
             }
         }),
          new webpack.LoaderOptionsPlugin({
-         minimize: false
+         minimize: true
          })
 
     ])

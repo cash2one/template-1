@@ -117,7 +117,7 @@ body {
   background: #000;
   overflow: hidden;
   margin-left: 10px;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 .m-info-message img {
   width: 24px;
@@ -131,10 +131,24 @@ i.u-info-message-icon {
 }
 .bg-tranparent {
   background: transparent;
+  border: none;
+  color: #fff;
 }
 .bg-tranparent:hover,
 .bg-tranparent:focus {
   background-color: transparent !important;
+  color: #fff;
+}
+.m-info-list .dropdown-menu {
+  background-color: #000;
+  color: #fff;
+}
+.m-info-list .dropdown-menu > li > a {
+  color: #fff;
+}
+.m-info-list .dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
+  background: #333;
 }
 .m-info-language-select {
   margin-left: 5px;
@@ -184,6 +198,10 @@ i.u-info-message-icon {
     .samelineXheight(50px);
     background: #1d2025;
     margin-bottom:20px;*/
+}
+#index_carousel .carousel-inner > .item > a > img,
+.carousel-inner > .item > img {
+  height: 440px;
 }
 .m-list-common-title {
   padding: 0 15px;
@@ -469,6 +487,8 @@ i.u-info-message-icon {
   width: 120px;
   height: 70px;
 }
+/* content end */
+/* footer start */
 .g-footer {
   border-top: 1px solid #34393f;
   /* height:160px;*/
@@ -492,12 +512,33 @@ i.u-info-message-icon {
 .g-footer .m-footer-link ul li a {
   color: #939393;
 }
-.g-footer .m-footer-link ul li img.u-icon-footer {
+.g-footer .m-footer-link ul li .u-icon-footer {
   display: inline-block;
-  width: 24px;
-  height: 24px;
+  height: 20px;
+  width: 20px;
   margin-bottom: 2px;
+  background: url(../img/icon-sprite.png) no-repeat;
 }
-/* content end */
-/* footer start */
+/*.icon-sprite{background:url(../img/icon-sprite.png) no-repeat ;}*/
+.u-icon-partners {
+  background-position: 0 0;
+}
+.u-icon-questions {
+  background-position: -20px 0;
+}
+.u-icon-weibo {
+  background-position: -40px 0;
+}
+.u-icon-join-us {
+  background-position: -60px 0;
+}
+.u-icon-contact-us {
+  background-position: -80px 0;
+}
+.u-icon-coporate {
+  background-position: -100px 0;
+}
+.u-icon-guide {
+  background-position: -120px 0;
+}
 /* footer end */

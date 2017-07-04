@@ -1,0 +1,87 @@
+@bodyWidth:1090px;
+@leftWidth:290px;
+@rightWidth:@bodyWidth - @leftWidth - 35px;
+@bgColor:#17181c;
+.squartFun(@value:36px) {
+  width: @value;
+  height: @value;
+}
+.g-mall-left{
+  width: @leftWidth;
+  height: 600px;
+  background: @bgColor;
+}
+.g-mall-right{
+  width: @rightWidth;
+  height: 600px;
+  background: @bgColor;
+}
+.m-mall-user-info-header{
+ padding:15px 10px;
+}
+
+.m-mall-user-avatar{
+  .squartFun(70px);
+   border-radius: 50%;
+   overflow:hidden;
+}
+.m-mall-user-avatar img{
+  .squartFun(70px);
+}
+.m-mall-info-block{
+  width: 190px;
+  height: 60px;
+  color:#fff;
+}
+.m-mall-info-block h3{
+  font-size:16px;
+}
+.m-mall-info-property{
+
+}
+.m-mall-info-nickname{
+  font-size: 16px;
+  line-height:20px;
+  margin: 10px 0;
+}
+.m-mall-info-property .u-mall-diamond{
+  font-size: 12px;
+  width: 70px;
+}
+.m-mall-info-property .u-mall-diamond i{
+  .squartFun(20px);
+  display: inline-block;
+  background: #fff;
+  vertical-align: middle;
+}
+.m-mall-info-property .u-mall-gold{
+  width:75px;
+  font-size:12px;
+
+}
+.m-mall-info-property .u-mall-gold i{
+  .squartFun(20px);
+  display: inline-block;
+  background: #fff;
+  vertical-align: middle;
+}
+.m-mall-info-property .u-mall-diamond span,.m-mall-info-property .u-mall-gold span{
+  vertical-align: middle;
+  color:#1686ce;
+}
+.u-btn-recharge{
+  display: inline-block;
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  text-decoration: none;
+  background: #d7820b;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+  border-radius: 3px;
+}
+.u-btn-recharge:hover{
+  color: #fff;
+  text-decoration: none;
+}

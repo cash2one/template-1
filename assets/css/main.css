@@ -98,11 +98,14 @@ body {
 .u-icon-search {
   width: 30px;
   height: 30px;
-  background: #d4d4d4;
+  line-height: 30px;
   position: absolute;
   top: 5px;
   right: 5px;
   border: none;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
 }
 .m-info-list {
   margin-left: 5px;
@@ -388,19 +391,23 @@ i.u-info-message-icon {
 .u-title-transparent {
   position: absolute;
   bottom: 0;
+  /* padding-top: 10px; */
   width: 100%;
-  background: #1d1d1d;
-  opacity: .8;
+  height: 60px;
   text-align: center;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDIxIDc5LjE1NDkxMSwgMjAxMy8xMC8yOS0xMTo0NzoxNiAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIChXaW5kb3dzKSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDo1RERCQ0I0ODYxMzIxMUU3QUREMUFEMTY4OTAzODAxMCIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDo1RERCQ0I0OTYxMzIxMUU3QUREMUFEMTY4OTAzODAxMCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOjVEREJDQjQ2NjEzMjExRTdBREQxQUQxNjg5MDM4MDEwIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjVEREJDQjQ3NjEzMjExRTdBREQxQUQxNjg5MDM4MDEwIi8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+R+vNcwAAAA9JREFUeNpiYGBgOAMQYAAA0QDNW2hbhQAAAABJRU5ErkJggg==");
 }
 .u-title-transparent p:first-child {
   color: #fff;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  margin-top: 8px;
+  margin-bottom: 5px;
 }
 .u-title-transparent p:nth-child(2) {
   color: #9b2c25;
+  font-size: 12px;
 }
 .m-lastest-matches {
   background: #1c1d1f;

@@ -132,10 +132,20 @@
                 <i></i>
                 <h4>商品详情</h4>
             </div>
-            <div class="m-mall-details">
-                <img src="" alt="" class="">
-                <div class="m-mall-details-text">
-
+            <div class="m-mall-details-info f-oh">
+                <img src="" alt="" class="u-mall-details-pic f-fl">
+                <div class="m-mall-details-text f-fl">
+                    <h4>雪鹰之琴</h4>
+                    <p>价格：<span class="u-color-price" v-cloak>{{total=price*amount}}</span>金币</p>
+                    <div class="u-mall-counts">
+                        <span>数量：</span>
+                        <span class="glyphicon-minus u-mall-minus" @click="minus"></span>
+                        <input type="text" title="" class="u-amount-input" v-model="amount" @keyup="recount">
+                        <span class="glyphicon-plus u-mall-plus" @click="plus"></span>
+                    </div>
+                    <button type="button" class="btn btn-primary u-btn-exchange" @click="comfirm">
+                        确认兑换
+                    </button>
                 </div>
             </div>
 
@@ -211,7 +221,38 @@
                 ]
             }
         }
+    });
+    var cote=new Vue({
+         el:'.m-mall-details-info',
+         data:function () {
+             return {
+                 amount:1,
+                 price: 10000,
+                 total:0
+             }
+         },
+        methods:{
+             minus:function () {
+                 var amount=this.$data.amount;
+                 amount--;
+                 this.$data.amount=amount>0?amount:1;
+
+             },
+            plus:function () {
+                return  this.$data.amount++;
+            },
+            comfirm:function () {
+                alert(this.$data.total);
+            },
+            recount:function () {
+                 var amount=this.$data.amount;
+                this.$data.amount=amount<1000?amount:999;
+            }
+        }
+
     })
+
+
 </script>
 <script src="./assets/js/components/jquery-3.2.1.js"></script>
 <script src="./dist/main.bundle.js?version=1.0.3"></script>

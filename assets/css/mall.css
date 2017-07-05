@@ -284,3 +284,11 @@ a.u-sort-active {
   height: 50px;
   color: #fff;
 }
+.u-mall-counts .u-minus-out {
+  width: 30px;
+  background: transparent;
+  border: none;
+}
+.u-mall-counts .u-minus-out:hover {
+  background-color: transparent;
+}

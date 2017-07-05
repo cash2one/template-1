@@ -139,7 +139,9 @@
                     <p>价格：<span class="u-color-price" v-cloak>{{total=price*amount}}</span>金币</p>
                     <div class="u-mall-counts">
                         <span>数量：</span>
-                        <span class="glyphicon-minus u-mall-minus" @click="minus"></span>
+                        <button type="button" class="btn-default u-minus-out">
+                            <span class="glyphicon-minus u-mall-minus" @click="minus"></span>
+                        </button>
                         <input type="text" title="" class="u-amount-input" v-model="amount" @keyup="recount">
                         <span class="glyphicon-plus u-mall-plus" @click="plus"></span>
                     </div>
@@ -246,7 +248,7 @@
             },
             recount:function () {
                  var amount=this.$data.amount;
-                this.$data.amount=amount<1000?amount:999;
+                this.$data.amount=(amount<1000)?(amount<0?1:amount):999;
             }
         }
 

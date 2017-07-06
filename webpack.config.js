@@ -29,7 +29,7 @@ module.exports = {
                 test: /\.(png|jpg|gif|svg|eot|woff2|ttf|woff)$/,
                 loader: 'file-loader',
                 options: {
-                    name: '[name].[ext]?[hash]'
+                    name: '../../img/[name].[ext]?[hash]'
                 }
             },
             {
@@ -62,22 +62,22 @@ module.exports = {
   /*  devtool: '#eval-source-map'*/
 };
 if (process.env.NODE_ENV === 'production') {
-   /* module.exports.devtool = '#source-map';*/
+    module.exports.devtool = '#source-map';
     module.exports.output.publicPath='';
     module.exports.plugins = (module.exports.plugins || []).concat([
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: '"production"'
             }
-        }),
-        new webpack.optimize.UglifyJsPlugin({
-            //sourceMap: true,
+        })/* ,
+       new webpack.optimize.UglifyJsPlugin({
+            sourceMap: false,
             compress: {
                 warnings:true
             }
         }),
          new webpack.LoaderOptionsPlugin({
              minimize: true
-         })
+         })*/
     ])
 }

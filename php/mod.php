@@ -7,11 +7,12 @@
 </head>
 <body>
 <?php include ('header/header.php') ?>
-<div class="g-wrap f-oh">
+<div class="g-wrap">
 
 </div>
 <?php include ('footer/footer.php') ?>
 <div class="private-depart">
+
 </div>
 </body>
 </html>

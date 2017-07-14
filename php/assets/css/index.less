@@ -7,6 +7,11 @@
 @headerLeftWidth: 820px;
 @headerRightWidth: @headerWidth - @headerLeftWidth;
 @defaulMargin: 20px;
+.pos-same-top(@value1:absolute,@value2:21%) {
+  position: @value1;
+  top: @value2;
+}
+
 .squartFun(@value:36px) {
   width: @value;
   height: @value;
@@ -249,13 +254,49 @@ a, a:hover {
 }
 
 /* function */
+
+/* custom style */
+input[type="radio"] {
+  display: inline-block;
+  height: 13px;
+  width: 13px;
+  border: 3px solid #5a5a58;
+  overflow: hidden;
+  margin-top: -4px;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  outline: 0;
+  background: 0 0;
+  border-radius: 50%;
+}
+
+input[type=radio]:checked:before {
+  content: '';
+  /*width: 8px;
+  height: 8px;*/
+  .squartFun(10px);
+  /*  margin: 1.5px auto 0;*/
+  /* border-radius: 50%;*/
+  background: #00a8e6;
+  display: block;
+}
+input[type=radio]:not(:disabled) {
+  cursor: pointer;
+}
+/* custom style */
 body {
   font-size: @mainfont;
   font-family: 'Microsoft YaHei', 'simsun', sans-serif;
   background: #1e1e20 url(../img/tempbg.jpg) no-repeat center top fixed;
+  color:#fff;
   /* background: linear-gradient(to bottom,#fff 0%, #232323 50%, #1e1e20 100%);*/
 }
-
+a{
+  color: #fff;
+}
+a:hover{
+  color: #fff;
+}
 .moduleMarBottom(@value:@defaulMargin) {
   margin-bottom: @value;
 }
@@ -263,6 +304,11 @@ body {
 .g-wrap {
   width: @bodyWidth;
   margin: 0 auto 70px auto;
+}
+.g-wrap:after {
+  content: '';
+  display: inherit;
+  clear: both;
 }
 
 /* header start  */
@@ -691,11 +737,6 @@ i.u-info-message-icon {
   vertical-align: middle;
 }
 
-.u-matches-team-img {
-  width: 105px;
-  height: 65px;
-}
-
 .u-matches-teamname {
   vertical-align: middle;
   margin-left: 10px;
@@ -853,6 +894,36 @@ i.u-info-message-icon {
 .u-team-rank-table thead tr {
   background: #131418;
 }
+
+.u-richman-rank-table {
+  width: 100%;
+  color: #fff;
+}
+
+.u-richman-rank-table .u-team-rank-tbody tr {
+  border-bottom: 1px solid #141414;
+}
+
+.u-richman-rank-table .u-team-rank-tbody td {
+  .samelineXheight(60px);
+  border-bottom: 1px solid #141414;
+}
+
+.u-richman-rank-table thead tr {
+  background: #131418;
+}
+
+.u-richman-rank-table td {
+  text-align: center;
+}
+
+.u-richman-rank-table tr td:first-child {
+
+}
+
+/*.u-richman-rank-table tr td:nth-child(2){
+  text-align: left;
+}*/
 
 .m-special {
   background: @moduleBgColor;
@@ -1359,8 +1430,7 @@ a.u-sort-active {
 }
 
 .m-guess-group-message {
-  height: 50px;
-  line-height: 35px;
+  .samelineXheight(50px);
   text-align: center;
 }
 
@@ -1401,16 +1471,18 @@ a.u-sort-active {
 
 /* */
 .g-guess-top {
-  background: rgba(51, 52, 56, 0.8);
+  background: rgba(51, 52, 56, 0.9);
   height: 250px;
 }
 
 .u-guess-top-left {
   padding: 0 15px;
 }
+
 .u-guess-top-right {
-  font-size:12px;
+  font-size: 12px;
 }
+
 .g-guess-top-title {
   .samelineXheight(40px);
   color: #fff;
@@ -1438,4 +1510,637 @@ a.u-sort-active {
 
 }
 
-/* */
+.g-guess-top-content {
+  color: #fff;
+}
+
+.g-guess-top-content .u-matches-team-img {
+  width: 210px;
+  height: 120px;
+  vertical-align: middle;
+}
+
+.u-guess-matches-team {
+  overflow: hidden;
+  width: 400px;
+  position: relative;
+}
+
+.u-guess-matches-content {
+  position: relative;
+  width: 840px;
+  padding: 30px 0;
+  margin: 0 auto 10px auto;
+  overflow: hidden;
+}
+
+.u-guess-pos-right {
+  .pos-same-top();
+  right: 0;
+}
+
+.u-guess-pos-left {
+  .pos-same-top();
+  left: 0;
+}
+
+.u-margin-bottom-18 {
+  margin-bottom: 18px;
+}
+.u-margin-bottom-15 {
+  margin-bottom: 15px;
+}
+.u-margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.u-font-size-18 {
+  font-size: 18px;
+}
+
+.u-guess-matches-content .u-divide-line {
+  top: 28%;
+  color: #51565c;
+}
+
+.m-guess-container {
+  background: #1c1d1f;
+  color: #fff;
+}
+
+.m-tabs-link-title {
+  height: 50px;
+  background: #131418;
+}
+
+.m-tabs-link-title ul li {
+  display: inline-block;
+  width: 170px;
+  .samelineXheight(50px);
+  text-align: center;
+}
+
+.m-tabs-link-title ul li > span {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 16px;
+}
+
+.m-tabs-link-title ul li > i {
+  font-size: 12px;
+  font-style: normal;
+  color: #eb6935;
+  vertical-align: sub;
+}
+
+.u-blue-active {
+  border-bottom: 2px solid #1592e2;
+}
+
+.m-guess-container-style {
+  padding: 10px;
+}
+
+.m-guess-container-style h3 {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+
+}
+
+.m-guess-container-choose {
+  text-align: center;
+}
+
+.m-guess-container-choose span {
+  display: inline-block;
+}
+
+.sameBlock() {
+  width: 260px;
+  font-size: 18px;
+  .samelineXheight(65px);
+  border-radius: 5px;
+}
+
+.u-choose-left {
+  .sameBlock();
+  background: #a63f40;
+}
+
+.u-choose-vs {
+  width: 70px;
+}
+
+.u-choose-right {
+  .sameBlock();
+  background: #489cb4;
+}
+
+.m-guess-container-content {
+  padding-bottom: 20px;
+}
+
+.m-guess-rank-content {
+  padding: 10px 14px;
+}
+
+.m-guess-rank {
+  width: 342px;
+  margin: auto 14px;
+}
+
+.m-guess-rank ul li {
+  height: 70px;
+  padding: 10px;
+}
+
+.m-guess-rank ul li:nth-child(odd) {
+  background: #25262a;
+}
+
+.m-guess-rank ul li:nth-child(even) {
+  background: #2a2b2f;
+}
+
+.u-guess-rank-userimg {
+  .squartFun(50px);
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.u-guess-rank-userimg img {
+  .squartFun(100%);
+  background: #ddd;
+}
+
+.m-guess-text-center {
+  width: 90px;
+  margin-left: 20px;
+}
+
+.m-guess-text-center p:first-child {
+  margin-bottom: 5px;
+}
+
+.m-guess-text-amount {
+  width: 90px;
+  text-align: right;
+  margin-right: 10px;
+  .samelineXheight(50px);
+  font-size: 12px;
+}
+
+.m-guess-text-amount .u-at {
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+.u-rank-richman {
+  .squartFun(42px);
+  line-height: 42px;
+  margin-right: 10px;
+  vertical-align: middle;
+  display: inline-block;
+}
+
+.u-td-wd60 {
+  width: 60px;
+}
+
+.u-td-wd80 {
+  width: 80px;
+}
+
+.u-td-wd100 {
+  width: 100px;
+}
+.u-td-wd150 {
+  width: 150px;
+}
+
+.m-guess-help {
+  background: #1c1d1f;
+}
+
+.m-guess-help-content {
+  padding: 15px 10px;
+}
+
+.m-guess-help-content > div {
+  text-align: center;
+}
+
+.m-guess-help-content .u-icon-help {
+  display: inline-block;
+  background: #000;
+  width: 32px;
+  height: 32px;
+}
+
+.u-richman-rank-table .u-text-left {
+  text-align: left;
+}
+
+.m-guess-help-content .u-icon-pointer {
+  background: url(../img/test/guess-help-01.jpg);
+}
+
+.m-guess-help-content .u-icon-tips {
+  background: url(../img/test/guess-help-02.jpg);
+}
+
+.m-guess-help-content .u-icon-message {
+  background: url(../img/test/guess-help-03.jpg);
+}
+
+.u-margin-top-10 {
+  margin-top: 10px;
+}
+.u-margin-top-15 {
+  margin-top: 15px;
+}
+.u-margin-top-20 {
+  margin-top: 20px;
+}
+/*  */
+/* rank user start */
+.m-rank-user {
+  color: #fff;
+}
+
+.m-rank-content {
+  background: #000;
+}
+
+.u-richman-rank-table .m-rank-trhead {
+  line-height: 42px;
+  background: #202123;
+  font-size: 12px;
+}
+
+.u-richman-rank-table thead tr {
+  line-height: 30px;
+}
+
+.u-pos-abs {
+  position: absolute;
+  left: 35%;
+  top: 15%;
+}
+
+div.u-remove-bg {
+  background: none;
+}
+
+.m-perguess-record {
+  padding: 0 15px 15px 15px;
+}
+
+.m-guess-record {
+
+}
+
+.m-perguess-table {
+  width: 100%;
+  color: #fff;
+  padding: 10px;
+}
+
+.m-perguess-table tr {
+  border-bottom: 1px solid #252628;
+}
+
+.m-perguess-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.m-perguess-table tbody td {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.m-perguess-content {
+  background: #000;
+  padding-top: 1px;
+}
+
+.m-perguess-table td {
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.m-guess-record {
+  background: rgba(44, 47, 52, 0.7);
+}
+
+.m-user-avatar {
+  vertical-align: middle;
+  .squartFun(70px);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.m-user-avatar img {
+  .squartFun(70px);
+}
+
+.per-guess-info {
+  padding: 10px;
+  background: #000;
+  color: @whiteColor;
+}
+
+.m-user-info {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.m-user-info h3 {
+  display: inline;
+  font-size: 16px;
+  font-weight:400;
+}
+
+.m-user-info span {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.m-tiny-info{
+  margin-top:10px;
+  margin-bottom:10px;
+}
+.m-tiny-info span{
+  margin-left: 10px;
+}
+.u-money-text{
+  margin-left: 10px;
+  margin-right:10px;
+}
+.per-header-text{
+  display: inline-block;
+  width: 100px;
+}
+
+.m-time-select{
+  width: 70px;
+  display: inline-block;
+}
+.m-type-select{
+  width: 70px;
+  display: inline-block;
+}
+.m-type-select .dropdown-menu,.m-time-select .dropdown-menu{
+  min-width:inherit;
+}
+.per-data-title{
+  margin-left: 10px;
+  margin-bottom:10px;
+}
+
+.per-data-content{
+  padding: 10px 0;
+}
+
+.per-content-table{
+  width: 100%;
+  margin-left: 10px;
+  margin-right: 10px;
+  line-height: 40px;
+}
+.u-person-divide-line{
+  height: 1px;
+  background: #4a4e51;
+}
+.per-data-title .dropdown-menu > li > a:hover{
+  color:#fff;
+}
+.u-tabs-menu {
+  background: #000;
+  color: #fff;
+}
+.u-tabs-menu a{
+  color:#fff;
+}
+
+.u-tabs-menu ul li{
+  .samelineXheight(50px);
+  padding-left: 25px;
+  padding-right: 25px;
+  border-bottom:1px solid #313131;
+}
+.u-tabs-menu ul li a{
+ display: block;
+}
+
+.u-menu-active{
+  background: #1592e2;
+  border-left: 4px solid #3ba7ef;
+}
+
+.m-set-avatar{
+  padding: 10px;
+  color: #fff;
+  margin: 10px 65px;
+}
+
+.u-person-avatar-img{
+  display: inline-block;
+  width: 140px;
+  height: 140px;
+  margin-right:20px;
+}
+
+.u-avatar-btn{
+  width: 130px;
+  height:42px;
+  background: transparent;
+  color:#1491e3;
+  border:1px solid #1a3f59;
+}
+.u-avatar-btn:hover, .u-avatar-btn:focus{
+  background: none;
+  color:#1491e3;
+}
+
+.u-avatar-tips{
+  font-size: 12px;
+  margin-top: 10px;
+  color:#767678;
+}
+
+.m-set-info{
+  margin: 10px 65px;
+  padding: 0 10px;
+  color: #fff;
+}
+
+.u-set-info-table{
+  width: 100%;
+}
+
+.u-set-info-table td{
+  padding:10px 0;
+}
+.u-person-btn-area{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.u-per-modify{
+  margin: auto 5px;
+  color: #1392df;
+}
+.u-per-modify:hover{
+  color:#00a8e6;
+  text-decoration: none;
+}
+
+
+
+.u-per-input{
+ /* width: 150px;*/
+  .samelineXheight(30px);
+  border: 1px solid #393a3c;
+  border-radius: 3px;
+  background: transparent;
+  padding: 0 10px;
+}
+
+.u-width-100{
+  width: 100px;
+}
+.u-width-120{
+  width: 120px;
+}
+.u-width-130{
+  width: 130px;
+}
+.u-width-140{
+  width: 140px;
+}
+.u-width-150{
+  width: 150px;
+}
+.u-width-190{
+  width: 190px;
+}
+
+.u-width-200{
+  width: 200px;
+}
+
+
+
+.u-per-inputTe{
+  width: 320px;
+  .samelineXheight(34px);
+  border: 1px solid #393a3c;
+  border-radius: 3px;
+  background: transparent;
+  padding: 0 10px;
+  vertical-align: middle;
+  margin-left:10px;
+}
+.u-set-info-table tr td:first-child{
+  color:#c5c8cd;
+}
+.u-select-box{
+  width: 80px;
+  display: inline-block;
+  border:1px solid #393a3c;
+  border-radius: 3px;
+}
+
+.u-btn-zone{
+  margin-top:40px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.u-btn-blue{
+  height: 50px;
+  color: #fff;
+  background-color: #1592e2;
+}
+.dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #000;
+}
+
+.u-per-label{
+  margin-right:15px;
+  cursor:pointer;
+}
+.u-per-label input[type="radio"]{
+  .squartFun(16px);
+  margin-left:5px;
+}
+
+.u-exgold-table{
+  display: block;
+  width: inherit;
+  margin: 50px 90px;
+}
+
+.u-exgold-table td{
+  padding-top:15px;
+  padding-bottom:15px;
+}
+.u-exgold-table td:first-child{
+  color:#9a9b9f;
+}
+.u-vertical-top{
+  vertical-align: top;
+}
+
+ul.u-per-amount{
+
+}
+
+ul.u-per-amount li{
+  position: relative;
+  display: inline-block;
+  width: 80px;
+  .samelineXheight(35px);
+  overflow:hidden;
+  cursor:pointer;
+  text-align: center;
+  margin: 10px 5px 10px 5px;
+  border:1px solid #393a3c;
+  border-radius:5px;
+  color:#949599;
+}
+ul.u-per-amount li.u-selected{
+  border-color:#0a659e;
+}
+ul.u-per-amount li.u-selected:after{
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 10px solid transparent;
+  border-right: 10px solid #1592e2;
+}
+
+/*.u-per-amount li a{
+  display: inline-block;
+  width: 120px;
+  height: 35px;
+}*/
+
+.u-per-amount .u-ex-alipay{
+  width: 120px;
+  background: url(../../assets/img/alipay.png) center no-repeat;
+}
+
+.u-per-amount .u-ex-wechatpay{
+  width: 120px;
+  background: url(../../assets/img/wechatpay.png) center no-repeat;
+}
+
+/* rank user end */
+

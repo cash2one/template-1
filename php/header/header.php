@@ -9,7 +9,7 @@
                     <li><a href="/">首页</a></li>
                     <li><a href="#">资讯</a></li>
                     <li><a href="/guessing.php">竞猜</a></li>
-                    <li><a href="/mall/mall.php">商城</a></li>
+                    <li><a href="/mall.php">商城</a></li>
                     <li><a href="#">社区</a></li>
                     <li><a href="#">APP</a></li>
                 </ul>

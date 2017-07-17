@@ -9,7 +9,7 @@ function generateExtractLoaders (loaders) {
     }).join('!')
 }
 module.exports = {
-    entry: './assets/main.js',
+    entry: './main.js',
     output: {
         path: path.resolve(__dirname,'dist'),
         publicPath: '/dist/',
@@ -25,6 +25,11 @@ module.exports = {
                     use: 'css-loader'
                      })
             },
+            {
+                test: /\.vue$/,
+                loader: 'vue-loader'
+            },
+
             {
                 test: /\.(png|jpg|gif|svg|eot|woff2|ttf|woff)$/,
                 loader: 'file-loader',
@@ -52,8 +57,10 @@ module.exports = {
     ],
     resolve: {
         alias:{
-            js:path.join(__dirname,'./assets/js')
-        }
+            'bootstrap':  path.resolve(__dirname, './node_modules/vue2-strap/dist'),
+            'vue$': 'vue/dist/vue.esm.js'
+        },
+        extensions: ['.js', '.vue', '.json']
     },
     devServer: {
         historyApiFallback: true,
@@ -61,6 +68,7 @@ module.exports = {
     },
   /*  devtool: '#eval-source-map'*/
 };
+console.log(module.exports.resolve.alias['bootstrap']);
 if (process.env.NODE_ENV === 'production') {
     module.exports.devtool = '#source-map';
     module.exports.output.publicPath='';

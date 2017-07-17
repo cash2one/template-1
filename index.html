@@ -18,7 +18,7 @@
             </div>
             <div class="m-nav">
                 <ul>
-                    <li v-for="item in navList"><a v-bind:href="item.link" v-cloak>{{item.title}}</a></li>
+                    <li v-for="item in navList"><a :href="item.link" v-cloak>{{item.title}}</a></li>
                 </ul>
             </div>
         </div>
@@ -721,6 +721,13 @@
         </div>
 
     </div>
+
+    <alert :show.sync="alertIsOpen" placement="top"  type="danger" width="400px" dismissable>
+        <span class="icon-ok-circled alert-icon-float-left"></span>
+        <strong>Well Done!{{title}}</strong>
+        <p>You successfully read this important alert message.</p>
+    </alert>
+    <button class="btn btn-primary" v-on:click="showAlert" style="width: 120px;height: 30px;"></button>
 </div>
 <div class="g-footer">
     <!--<div class="m-footer-bar"></div>-->
@@ -773,10 +780,26 @@
             </li>
         </ul>
     </div>
+
 </div>
+
+
+
+
 <script src="assets/js/components/vue.js"></script>
+<script src="assets/js/components/vue-strap.js"></script>
+<script src="./assets/js/components/jquery-3.2.1.js"></script>
+<script src="./dist/main.bundle.js?version=<%= htmlWebpackPlugin.options.version %>"></script>
 <script>
-    var app = new Vue({
+   /* new Vue({
+        components: {
+            alert: VueStrap.alert
+        },
+        data: {
+            options: []
+        }
+    });*/
+    var header = new Vue({
         el: '.g-header-wrap',
         data: function () {
             return {
@@ -787,13 +810,33 @@
                     {title: '商城', link: './mall.html'},
                     {title: '社区', link: '/index5'},
                     {title: 'APP', link: '/index6'}
-                ]
+                ],
             }
         }
     });
 
+    var bodySet=new Vue({
+        el:'.g-wrap',
+        components: {
+            alert: VueStrap.alert
+        },
+        data:function () {
+            return {
+                title:'temp',
+                alertIsOpen:false,
+                showRight: false,
+                showTop: false
+            }
+        },
+        methods:{
+            showAlert:function () {
+                this.$data.alertIsOpen=true;
+            }
+        }
+
+    })
+
 </script>
-<script src="./assets/js/components/jquery-3.2.1.js"></script>
-<script src="./dist/main.bundle.js?version=<%= htmlWebpackPlugin.options.version %>"></script>
+
 </body>
 </html>

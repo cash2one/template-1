@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width">
+    @@include('include/head-tag.html')
+</head>
+<body>
+@@include('include/header.html')
+<div class="g-wrap">
+    <div class="g-main-left f-fl">
+        <div class="m-guess-record">
+            <div class="m-list-common-title u-remove-bg">
+                <i></i>
+                <h4>个人设置</h4>
+            </div>
+            <div class="m-perguess-record">
+                <div class="m-perguess-content">
+                    <div class="m-set-avatar">
+                        <img src="../src/img/userInfo.png" alt="" class="u-person-avatar-img" id="avatarImgTag">
+                        <div class="u-person-btn-area">
+                            <button type="button" class="btn u-avatar-btn" id="setAvatarBtn">设置头像</button>
+                            <p class="u-avatar-tips">JPG或PNG格式，最大3M，不支持GIF</p>
+                            <form id="avatarForm" enctype="multipart/form-data">
+                                <input type="file" id="fileAvatar" name="pic" class="u-file-avatar">
+                                <!--<input type="hidden" name="image" id="fileHidden">-->
+                            </form>
+                            <input type="button" id="upLoadFile" class="btn btn-primary" value="开始上传">
+                        </div>
+
+                    </div>
+                    <div class="m-set-info">
+                        <table class="u-set-info-table">
+                            <tbody>
+                            <tr>
+                                <td class="u-td-wd60">昵称：</td>
+                                <td>
+                                    <input type="text" class="u-per-input" value="" id="nickName">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>性别：</td>
+                                <td>
+                                    <label class="u-per-label">
+                                        <input type="radio" name="sex" data-sex="1">
+                                        男
+                                    </label>
+                                    <label class="u-per-label">
+                                        <input type="radio" name="sex" data-sex="2" >
+                                        女
+                                    </label>
+                                    <label class="u-per-label">
+                                        <input type="radio" name="sex" data-sex="3" checked>
+                                        保密
+                                    </label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>手机：</td>
+                                <td><input type="text" class="u-per-input u-width-150 u-border-none" id="phoneNumIpt" maxlength="11"> <a href="javascript:;" class="u-per-modify modifyBtn" id="modifyPhone">修改</a></td>
+                            </tr>
+                            <tr>
+                                <td>密码：</td>
+                                <td><input type="password" class="u-per-input u-width-150" value="*********" id="passwordIpt"> <a href="#" class="u-per-modify modifyBtn" id="modifyPassword">修改</a></td>
+                            </tr>
+                            <tr>
+                                <td>地址：</td>
+                                <td>
+                                    <div class="u-select-box" id="province-select">
+                                        <div class="dropdown">
+                                            <a href="#" class="btn dropdown-toggle bg-tranparent"  id="selectProvince" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <span class="m-info-list-text" id="defaulProvince">广东省</span>
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu u-dropdown-menu" aria-labelledby="dropdownMenu1" id="drop-province">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="u-select-box">
+                                        <div class="dropdown">
+                                            <a href="#" class="btn dropdown-toggle bg-tranparent"  id="selectCity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                                <span class="m-info-list-text" id="defaultCity">深圳市</span>
+                                                <span class="caret"></span>
+                                            </a>
+                                            <ul class="dropdown-menu u-dropdown-menu" aria-labelledby="dropdownMenu2" id="drop-city">
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <input type="text" class="u-per-inputTe" value="" placeholder="详细地址" id="detailAdress">
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="u-btn-zone">
+                        <input type="button" class="btn u-btn-blue u-width-200" value="保存修改" id="saveBtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="g-main-right f-fr">
+        @@include('include/person-info.html')
+    </div>
+</div>
+@@include('include/footer.html')
+<div class="private-depart">
+    <script src="../src/js/jquery.form.js"></script>
+    <script src="../src/js/personSetting.js"></script>
+    <script src="../src/js/userPublic.js"></script>
+</div>
+</body>
+</html>

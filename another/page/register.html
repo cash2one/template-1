@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>巅峰电竞-帐号注册</title>
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/login-reg.css">
+</head>
+<body>
+<div class="wrap-reg">
+    <div class="wrap-box">
+        <div class="reg-group">
+             <div class="reg-title">
+                 <h3>注册信息</h3>
+             </div>
+            <div class="u-ipt-line">
+                <p>用户名</p>
+                <input type="text" class="login-input" placeholder="至少6位字符（字母数字组成）或手机号" maxlength="30" id="regPhone">
+            </div>
+            <div class="u-ipt-line">
+                <p>密码</p>
+                <input type="password" class="login-input"  placeholder="至少6位字符" maxlength="16" id="regPwd">
+            </div>
+            <div  class="u-ipt-line">
+                <p>确认密码</p>
+                <input type="password" class="login-input"  placeholder="至少6位字符" maxlength="16" id="regComfirmPwd">
+            </div>
+            <div class="reg-btn-area">
+                <button type="button" class="u-btn btn-blue" id="regBtn">注册</button>
+            </div>
+            <div class="reg-return">
+                <a href="/login.html" class="f-fr">返回</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+@@include('include/popupTips.html')
+<script src="../src/js/login-reg.js"></script>
+</body>
+</html>

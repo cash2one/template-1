@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width">
+    @@include('include/head-tag.html')
+</head>
+<body>
+@@include('include/header.html')
+<div class="g-wrap">
+    <div class="g-main-left f-fl">
+        <div class="m-guess-record">
+            <div class="m-list-common-title u-remove-bg">
+                <i></i>
+                <h4>充值记录</h4>
+            </div>
+            <div class="m-perguess-record" >
+                <div class="m-perguess-content">
+                    <table class="m-perguess-table">
+                        <thead>
+                        <tr>
+                            <td class="u-td-wd200">时间</td>
+                            <td>充值金额</td>
+                            <td>充值方式</td>
+                        </tr>
+                        </thead>
+                        <tbody id="recordList">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="g-main-right f-fr">
+        @@include('include/person-info.html')
+    </div>
+</div>
+@@include('include/footer.html')
+<div class="private-depart">
+    <script src="../src/js/userPublic.js"></script>
+    <script src="../src/js/ps-recharge-record.js"></script>
+</div>
+</body>
+</html>

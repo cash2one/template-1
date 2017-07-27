@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>Index</title>
+    <meta name="viewport" content="width=device-width">
+    @@include('include/head-tag.html')
+</head>
+<body>
+@@include('include/header.html')
+<div class="g-wrap">
+    <div class="g-main-left f-fl">
+        <div class="m-perguess-record f-pr" id="recBox">
+            <h4 class="u-center-title">
+                  充值中心
+            </h4>
+            <div class="m-perguess-content f-oh">
+                <table class="u-exgold-table">
+                    <tbody>
+                    <tr>
+                        <td class="u-td-wd80">金豆余额：</td>
+                        <td><span id="goldLeft">0</span></td>
+                    </tr>
+                    <tr>
+                        <td>充值帐户：</td>
+                        <td><span id="recAccount">15012341507</span></td>
+                    </tr>
+                    <tr>
+                        <td class="u-vertical-top">
+                            <p class="u-margin-top-15">额度选择：</p>
+                        </td>
+                        <td class="f-pr">
+                            <ul class="u-per-amount" id="amountOpts">
+                                <li class="u-selected">20</li>
+                                <li>50</li>
+                                <li>100</li>
+                                <li>200</li>
+                                <li>500</li>
+                                <li>1000</li>
+                                <li>2000</li>
+                                <li>5000</li>
+                                <li id="otherAmount">其它金额</li>
+                            </ul>
+                            <input type="text" class="u-other-amount-input" id="otherAmountIpt" maxlength="7" style="display: none">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>支付方式：</td>
+                        <td>
+                            <ul class="u-per-amount" id="payMethods">
+                                <li class="u-selected u-ex-alipay" data-paytype="alipay"><a href="#" class=""><!--支付宝--></a></li>
+                                <li class="u-ex-wechatpay" data-paytype="wechat"><a href="#" class=""><!--微信支付--></a></li>
+                            </ul>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="u-vertical-top">实付金额：</td>
+                        <td>
+                            <p><span class="u-blue-text">￥ <span id="payMoney">20</span>元</span></p>
+                            <p>可换 <span class="u-blue-text" id="goldAmount">0</span> 金豆</p>
+                            <p>魅力值：<span class="u-blue-text" id="charmValue">0</span></p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="button" class="btn u-btn-blue u-width-200" id="rechargeBtn">确认充值</button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+    <div class="g-main-right f-fr">
+        @@include('include/person-info.html')
+    </div>
+
+</div>
+
+@@include('include/footer.html')
+<div class="private-depart">
+    <script>
+        commonConfig.toggleLi('amountOpts', 'u-selected');
+        commonConfig.toggleLi('payMethods', 'u-selected');
+    </script>
+    <script src="../src/js/recharge.js"></script>
+    <script src="../src/js/userPublic.js"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,205 @@
+body {
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', 'simsun', sans-serif;
+}
+html,
+body {
+  height: 100%;
+}
+.wrap-login {
+  width: 100%;
+  height: 100%;
+  background: url(../img/login-reg/loginbg.jpg) no-repeat center top;
+}
+.wrap-reg {
+  width: 100%;
+  height: 100%;
+  background: url(../img/login-reg/regbg.jpg) no-repeat center top;
+}
+/*@font-face{
+  font-family:'FontAwesome';src:url(../fonts/fontawesome-webfont.woff)
+}*/
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+.f-fl {
+  float: left;
+}
+.f-fr {
+  float: right;
+}
+.f-oh {
+  overflow: hidden;
+}
+.wrap-box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 410px;
+  height: 500px;
+  margin-top: -250px;
+  margin-left: -205px;
+  background: rgba(18, 20, 23, 0.6);
+  border-radius: 5px;
+}
+.login-logo {
+  /*height: 110px;*/
+}
+.login-logo img {
+  display: block;
+  width: 200px;
+  height: 57px;
+  margin: 35px auto;
+}
+.login-group {
+  width: 300px;
+  height: 270px;
+  margin: auto;
+}
+.login-input {
+  width: 280px;
+  line-height: 40px;
+  height: 40px;
+  margin: 10px auto;
+  border-radius: 3px;
+  border: none;
+  padding: 0 10px;
+}
+.login-group a {
+  color: #fff;
+}
+.login-tips {
+  color: #fff;
+  font-size: 12px;
+  margin-top: 10px;
+}
+#remember-tick {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+#remember-tick span {
+  vertical-align: middle;
+}
+input[type=checkbox] {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  border: 1px solid #aaa;
+  overflow: hidden;
+  outline: 0;
+  background: 0 0;
+}
+/*input[type="checkbox"]:checked:before{
+  content: "\f00c";
+  font-family:FontAwesome;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  line-height: 11px;
+  color: #00a8e6;
+}*/
+.u-btn {
+  display: block;
+  width: 300px;
+  line-height: 40px;
+  height: 40px;
+  border-radius: 3px;
+  border: none;
+  cursor: pointer;
+}
+.btn-blue {
+  color: #fff;
+  background: #1592e2;
+}
+.btn-area {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.reg-btn-area {
+  margin-top: 40px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.reg-group {
+  width: 300px;
+  height: 200px;
+  margin: auto;
+}
+.reg-group label {
+  color: #fff;
+}
+.reg-title {
+  padding: 10px 0;
+  height: 50px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+.reg-title h3 {
+  text-align: center;
+  font-weight: 100;
+}
+.u-ipt-line {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.u-ipt-line p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.u-margin-top-20 {
+  margin-top: 20px;
+}
+.reg-return a {
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+}
+.reg-return a:hover {
+  text-decoration: none;
+}
+.reg-return {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.tips-box {
+  display: none;
+  width: 300px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 20%;
+  margin-left: -150px;
+  margin-top: -50px;
+  background: rgba(236, 78, 78, 0.5);
+  text-align: center;
+  border-radius: 5px;
+  z-index: 200;
+}
+.overlay {
+  display: none;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  position: absolute;
+  opacity: 0.5;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+.tips-box i {
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  cursor: pointer;
+  font-style: normal;
+  width: 16px;
+  height: 16px;
+  line-height: 16px;
+}

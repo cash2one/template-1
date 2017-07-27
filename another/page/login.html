@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>巅峰电竞-帐号登录</title>
+    <link rel="stylesheet" href="../src/css/normalize.css">
+    <link rel="stylesheet" href="../src/css/login-reg.css">
+</head>
+<body>
+<div class="wrap-login">
+    <div class="wrap-box">
+        <div class="login-logo">
+            <a href="#"><img src="../src/img/login-reg/logo.png" alt="LOGO"></a>
+        </div>
+        <div class="login-group">
+            <input type="text" class="login-input" placeholder="帐号" maxlength="30" id="loginPhone">
+            <input type="password" class="login-input"  placeholder="密码" maxlength="16" id="loginPwd">
+            <div class="login-tips f-oh">
+                <label for="remember-tick" class="f-fl">
+                    <input type="checkbox" id="remember-tick"><span>记住帐号</span>
+                </label>
+                <a href="#" class="f-fr">忘记密码</a>
+            </div>
+            <div class="btn-area">
+                <button type="button" class="u-btn btn-blue" id="loginBtn">登录</button>
+            </div>
+            <div class="login-tips f-oh">
+                <a href="./register.html" class="f-fr">立即注册</a>
+            </div>
+        </div>
+        <div class="social-login">
+            <div class="u-title">
+                <span>社交帐号登录</span>
+            </div>
+            <div class="u-con"></div>
+        </div>
+    </div>
+</div>
+@@include('include/popupTips.html')
+<script src="../src/js/login-reg.js"></script>
+</body>
+</html>

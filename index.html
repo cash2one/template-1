@@ -1,15 +1,15 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-    <meta name="keywords" content=""/>
-    <meta name="description" content=""/>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <title>Index</title>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="shortcut icon" href="./assets/img/favicon.ico"/>
-    <link rel="stylesheet" href="./dist/index.css?version=<%= htmlWebpackPlugin.options.version %>">
-</head>
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/index.css"></head>
 <body>
+<!-- header -->
 <div class="g-header">
     <div class="g-header-wrap">
         <div class="g-header-left f-fl">
@@ -18,14 +18,19 @@
             </div>
             <div class="m-nav">
                 <ul>
-                    <li v-for="item in navList"><a :href="item.link" v-cloak>{{item.title}}</a></li>
+                    <li><a href="/">首页</a></li>
+                    <li><a href="#">资讯</a></li>
+                    <li><a href="/guessing.php">竞猜</a></li>
+                    <li><a href="/mall.php">商城</a></li>
+                    <li><a href="#">社区</a></li>
+                    <li><a href="#">APP</a></li>
                 </ul>
             </div>
         </div>
         <div class="g-header-right f-fr">
             <div class="m-info">
                 <div class="m-info-avatar f-fl">
-                    <img src="./assets/img/carousel/1111582.jpg" alt="">
+                    <img src="/assets/img/carousel/1111582.jpg" alt="">
                 </div>
                 <div class="m-info-list f-fl">
                     <div class="dropdown">
@@ -64,36 +69,36 @@
             </div>
         </div>
     </div>
-</div>
-<div class="g-wrap f-oh">
+</div><!-- header -->
+<div class="g-wrap">
     <div class="g-main-left f-fl">
         <div  id="index_carousel"  class="m-carousel carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#index_carousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#index_carousel" data-slide-to="1" class=""></li>
-                    <li data-target="#index_carousel" data-slide-to="2" class=""></li>
-                    <li data-target="#index_carousel" data-slide-to="3" class=""></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="item active">
-                        <img alt="First slide" src="./assets/img/carousel/carsouel.jpg">
-                    </div>
-                    <div class="item">
-                        <img alt="Second slide" src="./assets/img/carousel/881651.jpg">
-                    </div>
-                    <div class="item">
-                        <img alt="Third slide" src="./assets/img/carousel/1193627.jpg">
-                    </div>
-                    <div class="item">
-                        <img alt="Third slide" src="./assets/img/carousel/1214905.jpg">
-                    </div>
+            <ol class="carousel-indicators">
+                <li data-target="#index_carousel" data-slide-to="0" class="active"></li>
+                <li data-target="#index_carousel" data-slide-to="1" class=""></li>
+                <li data-target="#index_carousel" data-slide-to="2" class=""></li>
+                <li data-target="#index_carousel" data-slide-to="3" class=""></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="item active">
+                    <img alt="First slide" src="./assets/img/carousel/carsouel.jpg">
                 </div>
-                <a class="left carousel-control" href="#index_carousel" data-slide="prev">
-                    <span class="glyphicon glyphicon-chevron-left"></span>
-                </a>
-                <a class="right carousel-control" href="#index_carousel" data-slide="next">
-                    <span class="glyphicon glyphicon-chevron-right"></span>
-                </a>
+                <div class="item">
+                    <img alt="Second slide" src="./assets/img/carousel/881651.jpg">
+                </div>
+                <div class="item">
+                    <img alt="Third slide" src="./assets/img/carousel/1193627.jpg">
+                </div>
+                <div class="item">
+                    <img alt="Third slide" src="./assets/img/carousel/1214905.jpg">
+                </div>
+            </div>
+            <a class="left carousel-control" href="#index_carousel" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left"></span>
+            </a>
+            <a class="right carousel-control" href="#index_carousel" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right"></span>
+            </a>
         </div>
 
         <div class="m-matches">
@@ -104,7 +109,7 @@
                     <li>王者荣耀</li>
                 </ul>
             </div>
-            <div class="m-matches-container" id="matchesAll">
+            <div class="m-matches-container" id="matchesTabAll">
                 <div class="m-matches-container-title">
                     <ul>
                         <li class="u-child-active">全部</li>
@@ -332,7 +337,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="m-matches-container" id="matchedTabThree" style="display: none">
+            <div class="m-matches-container" id="matchedTabThird" style="display: none">
                 <div class="m-matches-container-title">
                     <ul>
                         <li class="u-child-active">全部</li>
@@ -545,7 +550,7 @@
                 <h4>热门资讯</h4>
             </div>
             <div class="m-hot-news-topic">
-                <img src="" alt="">
+                <img src="/assets/img/carousel/869135.jpg" alt="">
                 <p>决赛回顾</p>
             </div>
             <div class="m-hot-news-list">
@@ -719,22 +724,13 @@
                 </ul>
             </div>
         </div>
-
     </div>
-
-    <alert :show.sync="alertIsOpen" placement="top"  type="danger" width="400px" dismissable>
-        <span class="icon-ok-circled alert-icon-float-left"></span>
-        <strong>Well Done!{{title}}</strong>
-        <p>You successfully read this important alert message.</p>
-    </alert>
-    <button class="btn btn-primary" v-on:click="showAlert" style="width: 120px;height: 30px;"></button>
 </div>
+
+<!--include footer -->
 <div class="g-footer">
     <!--<div class="m-footer-bar"></div>-->
     <div class="m-footer-link">
-        <!-- <div class="m-footer-flex"></div>
-         <div class="m-footer-flex"></div>
-         <div class="m-footer-flex"></div>-->
         <ul>
             <li>
                 <a href="" target="_blank">
@@ -780,63 +776,14 @@
             </li>
         </ul>
     </div>
-
 </div>
-
-
-
-
-<script src="assets/js/components/vue.js"></script>
-<script src="assets/js/components/vue-strap.js"></script>
 <script src="./assets/js/components/jquery-3.2.1.js"></script>
-<script src="./dist/main.bundle.js?version=<%= htmlWebpackPlugin.options.version %>"></script>
-<script>
-   /* new Vue({
-        components: {
-            alert: VueStrap.alert
-        },
-        data: {
-            options: []
-        }
-    });*/
-    var header = new Vue({
-        el: '.g-header-wrap',
-        data: function () {
-            return {
-                navList: [
-                    {title: '首页', link: '/index1'},
-                    {title: '资讯', link: '/index2'},
-                    {title: '竞猜', link: '/index3'},
-                    {title: '商城', link: './mall.html'},
-                    {title: '社区', link: '/index5'},
-                    {title: 'APP', link: '/index6'}
-                ],
-            }
-        }
-    });
-
-    var bodySet=new Vue({
-        el:'.g-wrap',
-        components: {
-            alert: VueStrap.alert
-        },
-        data:function () {
-            return {
-                title:'temp',
-                alertIsOpen:false,
-                showRight: false,
-                showTop: false
-            }
-        },
-        methods:{
-            showAlert:function () {
-                this.$data.alertIsOpen=true;
-            }
-        }
-
-    })
-
-</script>
-
+<script src="./assets/js/components/bootstrap-pgs.js"></script>
+<script src="./assets/js/public.js"></script><!--include footer -->
+<div class="private-depart">
+    <script>
+        commonConfig.Tabs();
+    </script>
+</div>
 </body>
 </html>

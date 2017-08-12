@@ -1,0 +1,117 @@
+@import "common.less";
+
+body{
+  background: url("./../image/login/login-background.png");
+}
+.g-body {
+  height: 500px;
+  width: 560px;
+  min-width: 560px;
+  margin: -250px 0 0 -280px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+.g-body-register{
+  height: 600px;
+  width: 560px;
+  min-width: 560px;
+  margin: -300px 0 0 -280px;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+}
+  .g-t{
+    width: 100%;
+  }
+  .g-b{
+    background: @contentColor;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    .g-title{
+      margin: 55px auto;
+      width: 150px;
+      height: 30px;
+      font-size: 30px;
+      text-align: center;
+    }
+    .g-logo{
+      width: 100px;
+      height: 30px;
+      background: @titleColor2;
+      margin: 55px auto;
+    }
+    @login-width1:360px;
+    .width-center(){
+      width: @login-width1;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .g-user-info{
+      .width-center();
+      .u-i1{
+        margin-bottom: 20px;
+      }
+      .u-i2{
+        width: 50%;
+        margin-right: 5%;
+        margin-bottom: 20px;
+        float: left;
+      }
+      .u-i3{
+        width: 45%;
+      }
+    }
+    .g-re{
+      .width-center();
+      position: relative;
+      margin-top: 10px;
+      .u-re-2{
+        position: absolute;
+        right: 0;
+      }
+    }
+    .g-login-btn{
+      .width-center();
+      margin-top: 30px;
+      .u-btn-info{
+        width: 100%;
+      }
+    }
+    .g-login-other{
+      .width-center();
+      margin-top: 70px;
+      display: flex;
+      li {
+        display: inline-block;
+        flex: 1;
+        height: 40px;
+        text-align: center;
+        border-right: 1px dotted @titleColor4;
+        &:last-child {
+          border-right: none !important;
+        }
+        .u-i-font{
+          position: relative;
+          top: -15px;
+        }
+        a:hover{
+          text-decoration: none;
+        }
+      }
+      .u-qq{
+        background: url("./../image/login/qq.png");
+      }
+      .u-wechat{
+        background: url("./../image/login/weixin.png");
+      }
+      .u-weibo{
+        background: url("./../image/login/weibo.png");
+      }
+    }
+  }
+  .u-alert-tips{
+    position: absolute;
+    width: 100%;
+  }

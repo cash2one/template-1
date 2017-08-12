@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+<title>电子电竞</title>
+@@include('./include/headTag.html')
+</head>
+<body>
+@@include('./include/header.html')
+@@include('./include/headNav.html')
+<div class="g-body">
+    <div class="m-u1">
+        <div class="m-l">
+            <div class="u-pic">
+                <div id="index_carousel" class="m-carousel carousel slide" data-ride="carousel">
+                    <!--<ol class="carousel-indicators u-carousel-tinny" id="carouselTag">
+                        <li data-target="#index_carousel"></li>
+                    </ol>
+                    <div class="carousel-inner" id="carouselItem">
+                        <div class="item">
+                            <a href="#" target="_blank">
+                                <img alt="" >
+                                <div class="u-carousel-title">
+                                </div>
+                            </a>
+                        </div>
+                    </div>-->
+                    <ol class="carousel-indicators" id="carouselTag">
+                        <li data-target="#index_carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#index_carousel" data-slide-to="1" class=""></li>
+                        <li data-target="#index_carousel" data-slide-to="2" class=""></li>
+                        <li data-target="#index_carousel" data-slide-to="3" class=""></li>
+                    </ol>
+                    <div class="carousel-inner" id="carouselItem">
+                        <div class="item active">
+                            <img alt="First slide" src="">
+                        </div>
+                        <div class="item">
+                            <img alt="Second slide" src="">
+                        </div>
+                        <div class="item">
+                            <img alt="Third slide" src="">
+                        </div>
+                        <div class="item">
+                            <img alt="Third slide" src="">
+                        </div>
+                    </div>
+
+
+
+
+                    <a class="left carousel-control" href="#index_carousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#index_carousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                    </a>
+                </div>
+               <!-- <ul class="m-demo">
+                    <li></li>
+                    <li><a href="#"><img src="http://nec.netease.com/img/m/1.jpg" alt=""/></a></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#"><img src="http://nec.netease.com/img/m/2.jpg" alt=""/></a></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#"><img src="http://nec.netease.com/img/m/3.jpg" alt=""/></a></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#"><img src="http://nec.netease.com/img/m/4.jpg" alt=""/></a></li>
+                    <li></li>
+                    <li></li>
+                    <li><a href="#"><img src="http://nec.netease.com/img/m/5.jpg" alt=""/></a></li>
+                    <li></li>
+                </ul>-->
+            </div>
+            <div class="u-news1">
+                <div class="u-bar u-margin-bottom10">
+                    <span class="u-hd">最新资讯</span>
+                </div>
+                <div class="latest-news-content">
+                    <ul class="latestNews" id="latestNews">
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+        <div class="m-c">
+            <ul class="m-cb">
+                <li class="m-cc">
+
+                    <ul class="u-news-center-list u-pos-re" id="newsCenter_01">
+                        <div class="m-title" >
+                            <div class="u-n1" id="newsCenterTitle01">王者荣耀</div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="m-cc">
+                    <ul class="u-news-center-list u-pos-re" id="newsCenter_02">
+                        <div class="m-title" >
+                            <div class="u-n1" id="newsCenterTitle02">英雄联盟</div>
+                        </div>
+                    </ul>
+                </li>
+                <li class="m-cc">
+                    <ul class="u-news-center-list u-pos-re" id="newsCenter_03">
+                        <div class="m-title" >
+                            <div class="u-n1" id="newsCenterTitle03">DOTA2</div>
+                        </div>
+                    </ul>
+
+
+                </li>
+                <li class="m-cc">
+                    <ul class="u-news-center-list u-pos-re" id="newsCenter_04">
+                        <div class="m-title" >
+                            <div class="u-n1" id="newsCenterTitle04">炉石传说</div>
+                        </div>
+                    </ul>
+
+                </li>
+            </ul>
+        </div>
+        <div class="m-r">
+            <div class="u-game">
+                <div class="u-c1">
+                    <a class="u-icons glyphicon glyphicon-triangle-left z-crt" aria-hidden="true"></a>
+                    <div class="m-tabs">
+                        <a class="u-total z-crt">全部</a>
+                        <a class="u-st">王者荣耀</a>
+                        <a class="u-st">英雄联盟</a>
+                        <a class="u-st">DOTA2</a>
+                    </div>
+                    <a class="u-icons glyphicon glyphicon-triangle-right z-crt" aria-hidden="true"></a>
+                </div>
+                <div class="u-c2">
+                    <ul class="nav nav-tabs" id="lgmatch">
+                        <li role="presentation" class="active"><a href="#">甲级联赛</a></li>
+                        <li role="presentation"><a href="#">甲级联赛</a></li>
+                        <li role="presentation"><a href="#">甲级联赛</a></li>
+                    </ul>
+                </div>
+                <table class="u-c3">
+                    <tr>
+                        <td class="u-t1"><a>视频</a></td>
+                        <td class="u-t2">QGhappy</td>
+                        <td class="u-t2">1:4</td>
+                        <td class="u-t2">AG超玩</td>
+                        <td class="u-t3">已结束</td>
+                    </tr>
+                    <tr>
+                        <td class="u-t1"><a>视频</a></td>
+                        <td class="u-t2">QGhappy</td>
+                        <td class="u-t2">1:4</td>
+                        <td class="u-t2">AG超玩</td>
+                        <td class="u-t3">已结束</td>
+                    </tr>
+                    <tr>
+                        <td class="u-t1"><a>视频</a></td>
+                        <td class="u-t2">QGhappy</td>
+                        <td class="u-t2">1:4</td>
+                        <td class="u-t2">AG超玩</td>
+                        <td class="u-t3">已结束</td>
+                    </tr>
+                    <tr>
+                        <td class="u-t1"><a>视频</a></td>
+                        <td class="u-t2">QGhappy</td>
+                        <td class="u-t2">1:4</td>
+                        <td class="u-t2">AG超玩</td>
+                        <td class="u-t3">已结束</td>
+                    </tr>
+                </table>
+                <div class="u-c4"><a href="#">观看更多视频>></a></div>
+            </div>
+            <div class="u-strategy" id="hotGuide">
+                <div class="u-bar">
+                    <span class="u-hd">热点攻略</span>
+                    <select name="" id="GuideForType">
+                        <option value="">全部游戏</option>
+                        <option value="2">王者荣耀</option>
+                        <option value="3">英雄联盟</option>
+                        <option value="4">DOTA2</option>
+                        <option value="5">炉石传说</option>
+                    </select>
+                    <select name="" id="GuideForTime">
+                        <option value="">过去24小时</option>
+                        <option value="7">1周内</option>
+                        <option value="30">1月内</option>
+                    </select>
+                   <!-- <a class="u-more">时间</a>
+                    <a class="u-more">游戏类型</a>-->
+                </div>
+                <ul class="m-abs" id="hotGuideList">
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="m-u2">
+        <div class="g-nav">
+            <div class="u-hd">直播中心</div>
+            <div class="m-nav2">
+                <a>王者荣耀</a>
+                <a>王者荣耀</a>
+                <a>王者荣耀</a>
+                <a>王者荣耀</a>
+            </div>
+        </div>
+        <ul class="u-list row">
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <ul class="u-list row">
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+            <li class="col-md-2">
+                <div class="m-box">
+                    <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                    <div class="f-text">
+                        <a href="#">标题</a>
+                        <span class="f-c1">caomei</span>
+                        <span class="f-c2">1.3万</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="m-u3 row">
+        <div class="col-md-8">
+            <div class="m-g1">
+                <div class="g-nav">
+                    <div class="u-hd">王者荣耀</div>
+                    <div class="m-nav2">
+                        <a>新闻</a>
+                        <a>比赛</a>
+                        <a>直播</a>
+                        <a>视频</a>
+                        <a>图片</a>
+                        <a>攻略</a>
+                    </div>
+                </div>
+                <div class="g-l">
+                    <p class="u-title">比赛视频</p>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g-r">
+                    <p class="u-title">新闻中心</p>
+                    <div class="m-t1">
+                        <p class="m-i1">欧洲和北美的口水大战又要在洲际赛上演</p>
+                        <div class="m-i2 media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="./assets/image/raw_1497322938.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="m-i3">
+                            <p>如果你无法简洁的表达你的想法，那只说明你还不够了解它。那只说明你还不够了解它</p>
+                        </div>
+                    </div>
+                    <ul class="m-abs">
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-g1">
+                <div class="g-nav">
+                    <div class="u-hd">王者荣耀</div>
+                    <div class="m-nav2">
+                        <a>新闻</a>
+                        <a>比赛</a>
+                        <a>直播</a>
+                        <a>视频</a>
+                        <a>图片</a>
+                        <a>攻略</a>
+                    </div>
+                </div>
+                <div class="g-l">
+                    <p class="u-title">比赛视频</p>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g-r">
+                    <p class="u-title">新闻中心</p>
+                    <div class="m-t1">
+                        <p class="m-i1">欧洲和北美的口水大战又要在洲际赛上演</p>
+                        <div class="m-i2 media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="./assets/image/raw_1497322938.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="m-i3">
+                            <p>如果你无法简洁的表达你的想法，那只说明你还不够了解它。那只说明你还不够了解它</p>
+                        </div>
+                    </div>
+                    <ul class="m-abs">
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-g1">
+                <div class="g-nav">
+                    <div class="u-hd">王者荣耀</div>
+                    <div class="m-nav2">
+                        <a>新闻</a>
+                        <a>比赛</a>
+                        <a>直播</a>
+                        <a>视频</a>
+                        <a>图片</a>
+                        <a>攻略</a>
+                    </div>
+                </div>
+                <div class="g-l">
+                    <p class="u-title">比赛视频</p>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g-r">
+                    <p class="u-title">新闻中心</p>
+                    <div class="m-t1">
+                        <p class="m-i1">欧洲和北美的口水大战又要在洲际赛上演</p>
+                        <div class="m-i2 media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="./assets/image/raw_1497322938.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="m-i3">
+                            <p>如果你无法简洁的表达你的想法，那只说明你还不够了解它。那只说明你还不够了解它</p>
+                        </div>
+                    </div>
+                    <ul class="m-abs">
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="m-g1">
+                <div class="g-nav">
+                    <div class="u-hd">王者荣耀</div>
+                    <div class="m-nav2">
+                        <a>新闻</a>
+                        <a>比赛</a>
+                        <a>直播</a>
+                        <a>视频</a>
+                        <a>图片</a>
+                        <a>攻略</a>
+                    </div>
+                </div>
+                <div class="g-l">
+                    <p class="u-title">比赛视频</p>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="u-list row">
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="col-md-4">
+                            <div class="m-box">
+                                <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                                <div class="f-text">
+                                    <span class="f-c2">如果你无法简洁的表达你的想法，那只说明你还不</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="g-r">
+                    <p class="u-title">新闻中心</p>
+                    <div class="m-t1">
+                        <p class="m-i1">欧洲和北美的口水大战又要在洲际赛上演</p>
+                        <div class="m-i2 media-left media-middle">
+                            <a href="#">
+                                <img class="media-object" src="./assets/image/raw_1497322938.jpeg" alt="">
+                            </a>
+                        </div>
+                        <div class="m-i3">
+                            <p>如果你无法简洁的表达你的想法，那只说明你还不够了解它。那只说明你还不够了解它</p>
+                        </div>
+                    </div>
+                    <ul class="m-abs">
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                        <li><a href="">EE新长文吐槽V社 去TI教练费用还要自理</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="m-ps1">
+                <div class="g-nav">
+                    <div class="u-hd">图片中心</div>
+                </div>
+                <ul class="u-list row">
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="u-list row">
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="u-list row">
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="u-list row">
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="col-md-6">
+                        <div class="m-box">
+                            <a href="#"><img src="./assets/image/raw_1497322938.jpeg" alt=""/></a>
+                            <div class="f-text">
+                                <span class="f-c2">我是文字</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="m-ps2">
+                <img src="./assets/image/raw_1497322938.jpeg" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+@@include('./include/footer.html')
+<div class="depart-primary">
+    <script src="/assets/js/index.js"></script>
+</div>
+</body>
+</html>

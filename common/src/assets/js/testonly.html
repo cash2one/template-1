@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="m-c3-list">
+    <div class="m-f1">
+        <img class="u-user-img" src="./../../assets/image/comment-user-avatar.png">
+    </div>
+    <div class="m-f2">
+        <div class="u-comment-userInfo">
+            <a href="#" class="u-user-name">' + commentAuthor + '</a><span class="u-p-time">' + publishTime + '</span>
+        </div>
+        <p class="u-comment" data-cornet="100020">
+            ' + commentValue + '
+        </p>
+        <div class="m-btn-group">
+            <a href="javascript:void(0);" class="u-reply-btn">回复</a><a href="javascript:void(0);" class="u-reply-fold u-arrow-down">回复(<span>'+item.num+'</span>)</a><a href="javascript:void(0);" class="u-support">支持</a><a href="javascript:void(0);" class="u-prosecute">举报</a>
+        </div>
+        <div class="u-reply-text-zone" id="">
+            <textarea class="u-com-textarea-inner" id="" placeholder="请输入评论内容" maxlength="350"></textarea><button class="u-comment-btn">回复</button>
+        </div>
+    </div>
+</div>
+
+<div class="m-c3-list">
+    <div class="m-f1">
+        <img class="u-user-img" src="./../../image/raw_1497322938.jpeg">
+    </div>
+    <div class="m-f2">
+        <div class="u-comment-userInfo">
+            <a href="#" class="u-user-name">'+ nickName +'</a><span class="u-p-time">'+timeStr+'</span>
+        </div>
+        <p class="u-comment" data-pid="'+ key +'">
+            '+content+'
+        </p>
+        <div class="m-btn-group">
+            <a href="javascript:void(0);" class="u-reply-btn">回复</a><a href="javascript:void(0);" class="u-reply-fold u-arrow-down">回复(<span>'+item.num+'</span>)</a><a href="javascript:void(0);" class="u-support">支持</a><a href="javascript:void(0);" class="u-prosecute">举报</a>
+            <div class="u-reply-text-zone" id="' + textzoneId + '">
+                <textarea class="u-com-textarea-inner" id="' + areaId + '" placeholder="请输入评论内容" maxlength="350"></textarea><button class="u-comment-btn">回复</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body>
+</html>

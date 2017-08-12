@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="./../assets/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="./../assets/css/person-info.css">
+</head>
+<body>
+<div class="g-body">
+    <div class="g-l">
+        <a href="#" class="m-user-head">
+            <img src="./../assets/image/avatar/header1.png">
+            <span>上传头像</span>
+        </a>
+        <ul class="m-list" id="selectMenu">
+            <li class="f-select"><a href="#">基本资料</a></li>
+            <li><a href="">绑定手机</a></li>
+            <li><a href="">修改密码</a></li>
+            <li><a href="">我的消息</a></li>
+        </ul>
+    </div>
+    <div>
+        <!--  上传头像  -->
+        <div class="g-r" style="display: none">
+            <div class="g-rb">
+                <div>
+                    <h3 class="u-header-title">上传头像</h3>
+                    <div class="m-upload">
+                        <div class="m-user-img">
+                            <img src="./../assets/image/avatar/header1.png">
+                        </div>
+                        <div class="m-img-upload">
+                            请选择新的照片文件
+                            <br>
+                            支持JPG、PNG、GIF格式的图片，文件需小于2M
+                            <br>
+                            <button type="button" class="btn btn-default">上传头像</button>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="u-header-title">默认头像</h3>
+                    <div class="m-upload">
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header1.png">
+                            <br>
+                            <button type="button" class="btn btn-default-disable btn-default">使用中</button>
+                        </div>
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header2.png">
+                            <br>
+                            <button type="button" class="btn btn-default">使用</button>
+                        </div>
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header3.png">
+                            <br>
+                            <button type="button" class="btn btn-default">使用</button>
+                        </div>
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header4.png">
+                            <br>
+                            <button type="button" class="btn btn-default">使用</button>
+                        </div>
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header5.png">
+                            <br>
+                            <button type="button" class="btn btn-default">使用</button>
+                        </div>
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header6.png">
+                            <br>
+                            <button type="button" class="btn btn-default">使用</button>
+                        </div>
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header7.png">
+                            <br>
+                            <button type="button" class="btn btn-default">使用</button>
+                        </div>
+                        <div class="m-user-abs">
+                            <img src="./../assets/image/avatar/header8.png">
+                            <br>
+                            <button type="button" class="btn btn-default">使用</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  /上传头像  -->
+
+        <!--  个人中心和基本信息  -->
+        <div class="g-r">
+            <div class="m-user-info g-rb">
+                <div>
+                    <!--  个人中心  -->
+                    <h3 class="u-header-title">基本信息</h3><a href="" class="u-i-font">修改</a>
+                    <table class="m-info">
+                        <tr>
+                            <td>ID账号：</td>
+                            <td>123456</td>
+                        </tr>
+                        <tr>
+                            <td>用户昵称：</td>
+                            <td>33e</td>
+                        </tr>
+                        <tr>
+                            <td>性别：</td>
+                            <td class="u-sub-font">暂无信息</td>
+                        </tr>
+                        <tr>
+                            <td>出生日期：</td>
+                            <td class="u-sub-font">暂无信息</td>
+                        </tr>
+                        <tr>
+                            <td>教育程度：</td>
+                            <td class="u-sub-font">暂无信息</td>
+                        </tr>
+                        <tr>
+                            <td>行业类别：</td>
+                            <td class="u-sub-font">暂无信息</td>
+                        </tr>
+                        <tr>
+                            <td>所属地区：</td>
+                            <td class="u-sub-font">暂无信息</td>
+                        </tr>
+                        <tr>
+                            <td>在线时长：</td>
+                            <td>4小时</td>
+                        </tr>
+                        <tr>
+                            <td>注册时间：</td>
+                            <td>2017-12-12</td>
+                        </tr>
+                        <tr>
+                            <td>最后登录：</td>
+                            <td>2017-12-12</td>
+                        </tr>
+                    </table>
+                    <!--  /个人中心  -->
+                </div>
+                <div  style="display: none;">
+                    <!--  个人中心基本信息  -->
+                    <h3 class="u-header-title">基本信息</h3>
+                    <div class="m-info-active">
+                        <table class="m-info">
+                            <tr>
+                                <td>ID账号：</td>
+                                <td>123456</td>
+                            </tr>
+                            <tr>
+                                <td>用户昵称：</td>
+                                <td><input type="text" class="u-i1 form-control" placeholder="请填写用户昵称" aria-describedby="basic-addon1"></td>
+                            </tr>
+                            <tr>
+                                <td>性别：</td>
+                                <td>
+                                    <span class="ch-radio checked"><span class="icon"></span>
+                                        <input type="checkbox" value="">
+                                        男
+                                    </span>
+                                    <span class="ch-radio"><span class="icon"></span>
+                                        <input type="checkbox" checked="checked" value="">
+                                        女
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>出生日期：</td>
+                                <td><input type="text" class="u-i1 form-control" placeholder="请填写" aria-describedby="basic-addon1"></td>
+                            </tr>
+                            <tr>
+                                <td>教育程度：</td>
+                                <td><input type="text" class="u-i1 form-control" placeholder="请填写教育程度" aria-describedby="basic-addon1"></td>
+                            </tr>
+                            <tr>
+                                <td>行业类别：</td>
+                                <td><input type="text" class="u-i1 form-control" placeholder="请填写用户昵称" aria-describedby="basic-addon1"></td>
+                            </tr>
+                            <tr>
+                                <td>所属地区：</td>
+                                <td><input type="text" class="u-i1 form-control" placeholder="请填写" aria-describedby="basic-addon1"></td>
+                            </tr>
+                        </table>
+                        <button type="button" class="u-btn-save u-btn-info btn">保存</button>
+                    </div>
+                    <!--  /个人中心基本信息  -->
+                </div>
+            </div>
+            <div class="g-rb">
+                <h3 class="u-header-title">个人兴趣</h3><a href="" class="u-i-font">修改</a>
+                <table class="m-info">
+                    <tr>
+                        <td>喜欢的游戏：</td>
+                        <td class="u-sub-font">暂无信息</td>
+                    </tr>
+                    <tr>
+                        <td>喜欢的战队：</td>
+                        <td class="u-sub-font">暂无信息</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <!--  /个人中心和基本信息  -->
+
+        <!--  修改手机  -->
+        <div class="g-r" style="display: none;">
+            <div class="g-rb">
+                <h3 class="u-header-title">当前绑定手机号为</h3><h3 class="u-header-title u-i-font">133****7856</h3>
+                <table class="m-info">
+                    <tr>
+                        <td>新手机号：</td>
+                        <td><input type="text" class="u-size1 u-i1 form-control" placeholder="请填写手机号码" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <td>短信验证码：</td>
+                        <td>
+                            <input type="text" class="u-size2 u-i1 form-control" placeholder="请填写验证码" aria-describedby="basic-addon1">
+                            <button type="button" class="u-size3 u-i3 u-btn-info btn" style="display: none;">获取验证码</button>
+                            <button type="button" class="u-size3 u-i3 btn-default-disable btn">59秒后重发</button>
+                        </td>
+                    </tr>
+                </table>
+                <button type="button" class="u-btn-save u-btn-info btn">确认</button>
+            </div>
+        </div>
+        <!--  /修改手机  -->
+
+        <!--  修改密码  -->
+        <div class="g-r" style="display: none;">
+            <div class="g-rb">
+                <h3 class="u-header-title">修改密码</h3>
+                <table class="m-info">
+                    <tr>
+                        <td>原密码：</td>
+                        <td><input type="text" class="u-i1 form-control" placeholder="请填写原密码" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <td>新密码：</td>
+                        <td><input type="text" class="u-i1 form-control" placeholder="请填写新密码" aria-describedby="basic-addon1"></td>
+                    </tr>
+                    <tr>
+                        <td>确认新密码：</td>
+                        <td><input type="text" class="u-i1 form-control" placeholder="请再次填写新密码" aria-describedby="basic-addon1"></td>
+                    </tr>
+                </table>
+                <button type="button" class="u-btn-save u-btn-info btn">确认</button>
+            </div>
+        </div>
+        <!--  /修改密码  -->
+
+        <!--  个人兴趣  -->
+        <div class="g-r" style="display: none;">
+            <div class="g-rb">
+                <h3 class="u-header-title">个人兴趣</h3>
+                <div class="m-interest">
+                    <span class="sub-title">选择自己喜欢的游戏：</span>
+                    <span class="ch-checkbox checked"><span class="icon"></span>
+                        <input type="checkbox" value="">
+                        王者荣耀
+                     </span>
+                    <span class="ch-checkbox"><span class="icon"></span>
+                        <input type="checkbox" checked="checked" value="">
+                        英雄联盟
+                    </span>
+                </div>
+                <div class="m-interest">
+                    <span class="sub-title">选择自己喜欢的战队：</span>
+                    <div>
+                        <label class="lab">王者荣耀：</label>
+                        <div class="g-c">
+                            <div class="g-cr row">
+                                <span class="ch-checkbox checked col-md-2"><span class="icon"></span>
+                                     <input type="checkbox" value="">
+                                            聚灵阁看
+                                </span>
+                                <span class="ch-checkbox col-md-2"><span class="icon"></span>
+                                            <input type="checkbox" checked="checked" value="">
+                                            而构建为分
+                                        </span>
+                                <span class="ch-checkbox checked col-md-2"><span class="icon"></span>
+                                            <input type="checkbox" value="">
+                                            聚灵阁看
+                                         </span>
+                                <span class="ch-checkbox col-md-2"><span class="icon"></span>
+                                            <input type="checkbox" checked="checked" value="">
+                                            而构建为分
+                                        </span>
+                                <span class="ch-checkbox checked col-md-2"><span class="icon"></span>
+                                            <input type="checkbox" value="">
+                                            聚灵阁看
+                                         </span>
+                                <span class="ch-checkbox col-md-2"><span class="icon"></span>
+                                            <input type="checkbox" checked="checked" value="">
+                                            而构建为分
+                                        </span>
+                                <span class="ch-checkbox checked col-md-2"><span class="icon"></span>
+                                            <input type="checkbox" value="">
+                                            聚灵阁看
+                                         </span>
+                                <span class="ch-checkbox col-md-2"><span class="icon"></span>
+                                            <input type="checkbox" checked="checked" value="">
+                                            而构建为分
+                                 </span>
+                                <br>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="u-btn-save u-btn-info btn">保存</button>
+                </div>
+            </div>
+        </div>
+        <!--  个人兴趣  -->
+
+        <!--消息中心-->
+        <div class="g-r" style="display:none;">
+            <div class="g-rb">
+                <h3 class="u-header-title">消息中心</h3>
+                <div class="m-news-nav">
+                    <a class="nav-select">系统通知</a>
+                    <a>我的评论</a>
+                    <a>我的消息</a>
+                </div>
+                <div class="m-news-content">
+                    <div class="m-comment">
+                        <h4>全景回顾2017巴拉巴拉<small>2017-02-02</small></h4>
+                        <p>
+                            6月16日，主题为“与时聚竞”的腾讯电竞2017年度品牌发布会在上海珠江创意中心举办。在去年12月9日腾讯电竞品牌正式发布后，接下来腾讯电竞的布局方向一直是整个行业关注的焦点，这次发布会上腾讯电竞方面给出了答案。在去年12月9日腾讯电竞品牌正式发布后，接下来腾讯电竞的布局方向一直…
+                        </p>
+                    </div>
+                    <div class="m-comment">
+                        <h4>全景回顾2017巴拉巴拉<small>2017-02-02</small></h4>
+                        <p>
+                            6月16日，主题为“与时聚竞”的腾讯电竞2017年度品牌发布会在上海珠江创意中心举办。在去年12月9日腾讯电竞品牌正式发布后，接下来腾讯电竞的布局方向一直是整个行业关注的焦点，这次发布会上腾讯电竞方面给出了答案。在去年12月9日腾讯电竞品牌正式发布后，接下来腾讯电竞的布局方向一直…
+                        </p>
+                    </div>
+                    <div class="m-comment">
+                        <h4>全景回顾2017巴拉巴拉<small>2017-02-02</small></h4>
+                        <p>
+                            6月16日，主题为“与时聚竞”的腾讯电竞2017年度品牌发布会在上海珠江创意中心举办。在去年12月9日腾讯电竞品牌正式发布后，接下来腾讯电竞的布局方向一直是整个行业关注的焦点，这次发布会上腾讯电竞方面给出了答案。在去年12月9日腾讯电竞品牌正式发布后，接下来腾讯电竞的布局方向一直…
+                        </p>
+                    </div>
+                </div>
+                <div class="m-news-content" style="display: none;">
+                    <table class="m-table-comment">
+                        <tr>
+                            <td>评论内容</td>
+                            <td>评论时间</td>
+                            <td>操作</td>
+                        </tr>
+                        <tr>
+                            <td><h5>全景回顾吧啦吧吧</h5></td>
+                            <td>2017-56-89</td>
+                            <td><a class="u-i-font">查看全部</a></td>
+                        </tr>
+                        <tr><td colspan="3">发布的评论：F系中国坦克目前就是肉,敌方谁都可以来啃一口,装甲全是假的!7级车被5级车随便穿正脸</td></tr>
+                        <tr>
+                            <td><h5>全景回顾吧啦吧吧</h5></td>
+                            <td>2017-56-89</td>
+                            <td><a class="u-i-font">查看全部</a></td>
+                        </tr>
+                        <tr><td colspan="3">发布的评论：F系中国坦克目前就是肉,敌方谁都可以来啃一口,装甲全是假的!7级车被5级车随便穿正脸</td></tr>
+                        <tr>
+                            <td><h5>全景回顾吧啦吧吧</h5></td>
+                            <td>2017-56-89</td>
+                            <td><a class="u-i-font">查看全部</a></td>
+                        </tr>
+                        <tr><td colspan="3">发布的评论：F系中国坦克目前就是肉,敌方谁都可以来啃一口,装甲全是假的!7级车被5级车随便穿正脸中国坦克目前就是肉,敌方谁都可以来啃一口,装甲全是假的!7级车被5级车随便穿正脸中国坦克目前就是肉,敌方谁都可以来啃一口,装甲全是假的!7级车被5级车随便穿正脸</td></tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <!--/消息中心-->
+    </div>
+</div>
+</body>
+</html>

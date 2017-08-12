@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>手机号注册</title>
+    @@include('./include/login-register-header.html')
+</head>
+<body>
+<div class="g-body-register">
+    <!--<div class="g-t"><a href="" class="u-default-font">&lt;返回上一页</a></div>-->
+    <div class="g-b">
+        <div class="alert alert-warning u-alert-tips" role="alert" id="alertPopup" style="display: none"><button type="button" class="close" id="alertClose" ><span >&times;</span></button><span id="alertMessage"></span></div>
+        <div class="g-logo"></div>
+        <div class="g-user-info">
+            <input type="text" class="u-i1 form-control" id="regPhone" placeholder="请输入手机号码"  maxlength="11" >
+            <input type="text" class="u-i2 form-control" placeholder="请输入验证码" id="validCode-Ipt" maxlength="4">
+            <button type="button" class="u-i3 u-btn-info btn" id="getValidCode-Btn">获取验证码</button>
+            <input type="password" class="u-i1 form-control" id="regPwd" placeholder="请输入密码" >
+            <input type="password" class="u-i1 form-control" id="regComfirmPwd" placeholder="请输入确认密码" >
+        </div>
+        <div class="g-re">
+            <label>
+                <input type="checkbox" class="u-checkbox" value="option1" checked id="agreeProtrol">
+                <span>我已阅读并同意</span>
+            </label>
+            <a href="" class="u-i-font">《网站用户协议》</a>
+        </div>
+        <div class="g-login-btn">
+            <button type="button" class="u-btn-info btn" id="regBtn">注册</button>
+        </div>
+        <div class="g-re">
+            <a href="#" class="u-re-2 u-i-font">已有账号，立即登录></a>
+        </div>
+        <ul class="g-login-other">
+            <li>
+                <a href="">
+                    <i class="u-qq u-icon"></i>
+                    <span class="u-i-font">QQ登录</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="u-wechat u-icon"></i>
+                    <span class="u-i-font">微信登录</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="u-weibo u-icon"></i>
+                    <span class="u-i-font">微博登录</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+@@include('./include/login-register-footer.html')
+</body>
+</html>

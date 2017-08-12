@@ -11,7 +11,7 @@ var htmlInputPath='src/**/*.html',
     htmlExcludePath='!src/include/**.html',
     htmldist='dist/';
 var cssSrc='src/css';
-var Config=require('./build/gulpfile.config.js');
+var Config=require('./common/gulpfile.config.js');
 gulp.task('fileinclude',function() {
     gulp.src([htmlInputPath,htmlExcludePath])
         .pipe(fileinclude({

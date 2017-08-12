@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    @@include('./include/login-register-header.html')
+</head>
+<body>
+<div class="g-body">
+    <!--<div class="g-t"><a href="" class="u-default-font">&lt;返回上一页</a></div>-->
+    <div class="g-b">
+        <div class="alert alert-warning u-alert-tips" role="alert" id="alertPopup" style="display: none"><button type="button" class="close" id="alertClose" ><span >&times;</span></button><span id="alertMessage"></span></div>
+        <div class="g-logo"></div>
+        <div class="g-user-info">
+            <input type="text" class="u-i1 form-control" placeholder="手机号" maxlength="11" id="loginPhone" aria-describedby="basic-addon1">
+            <input type="password" class="u-i1 form-control" placeholder="密码" id="loginPwd" aria-describedby="basic-addon1">
+        </div>
+        <div class="g-re">
+            <a href="#" class="u-re-1 u-sub-font">忘记密码？</a>
+            <a href="#" class="u-re-2 u-i-font">没有账号，立即注册></a>
+        </div>
+        <div class="g-login-btn">
+            <button type="button" class="u-btn-info btn" id="loginBtn">登录</button>
+        </div>
+        <ul class="g-login-other">
+            <li>
+                <a href="">
+                    <i class="u-qq u-icon"></i>
+                    <span class="u-i-font">QQ登录</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="u-wechat u-icon"></i>
+                    <span class="u-i-font">微信登录</span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <i class="u-weibo u-icon"></i>
+                    <span class="u-i-font">微博登录</span>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+@@include('./include/login-register-footer.html')
+</body>
+</html>

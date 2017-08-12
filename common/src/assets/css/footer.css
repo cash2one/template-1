@@ -1,0 +1,423 @@
+/* reset */
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+  margin: 0;
+  padding: 0;
+}
+header,
+footer,
+section,
+article,
+aside,
+nav,
+hgroup,
+address,
+figure,
+figcaption,
+menu,
+details {
+  display: block;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+caption,
+th {
+  text-align: left;
+  font-weight: normal;
+}
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+  border: 0;
+}
+i,
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: normal;
+}
+[hidefocus],
+summary {
+  outline: 0;
+}
+li {
+  list-style: none;
+}
+sup,
+sub {
+  font-size: 83%;
+}
+pre,
+code,
+kbd,
+samp {
+  font-family: inherit;
+}
+q:before,
+q:after {
+  content: none;
+}
+textarea {
+  overflow: auto;
+  resize: none;
+}
+label,
+summary {
+  cursor: default;
+}
+a,
+button {
+  cursor: pointer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+  font-weight: bold;
+}
+del,
+ins,
+u,
+s,
+a,
+a:hover {
+  text-decoration: none;
+}
+body,
+textarea,
+input,
+button,
+select,
+keygen,
+legend {
+  font: 12px/1.14 arial;
+  color: #333;
+  outline: 0;
+}
+body {
+  background: #fff;
+}
+a {
+  color: #000000;
+}
+a:hover {
+  color: #378fff;
+  text-decoration: underline;
+}
+a,
+p,
+span,
+label,
+tr,
+td {
+  font-size: 14px;
+}
+.u-btn-info:hover,
+.u-btn-info:focus {
+  color: #fff;
+  text-decoration: none;
+}
+.btn-default-disable {
+  color: #999999;
+  background-color: rgba(153, 153, 153, 0.1);
+  border-color: rgba(153, 153, 153, 0.1);
+}
+.btn-default-disable:hover,
+.btn-default-disable:focus {
+  color: #999999;
+  background-color: rgba(153, 153, 153, 0.1);
+  border-color: rgba(153, 153, 153, 0.1);
+}
+.g-user {
+  width: 1280px;
+  height: 75px;
+  margin: 0 auto 10px auto;
+}
+.g-header {
+  width: 1280px;
+  height: 62px;
+  margin: 0 auto 10px auto;
+  border-bottom: 1px solid rgba(153, 153, 153, 0.1);
+}
+.u-logo {
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  background: rgba(153, 153, 153, 0.1);
+  height: 45px;
+  width: 110px;
+}
+.u-search {
+  float: right;
+  margin-top: 10px;
+}
+.u-search input {
+  width: 150px;
+  padding: 5px;
+  height: 40px;
+  border: 1px solid #D9D9D9;
+  border-top-color: #c0c0c0;
+  line-height: 17px;
+  font-size: 14px;
+  color: #777;
+  background: #fff;
+}
+.u-user {
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.u-user a {
+  font-size: 12px;
+  height: 45px;
+  line-height: 45px;
+  margin: 0 15px;
+}
+.color-black {
+  background: #000000;
+}
+.color-black .h-logo {
+  color: #fff;
+}
+.color-black ul.m-nav a {
+  color: #fff;
+}
+.color-black ul.m-nav .line {
+  color: #fff;
+}
+.color-white {
+  background: #fff;
+}
+.color-white .h-logo {
+  color: #000000;
+}
+.color-white ul.m-nav a {
+  color: #000000;
+}
+.color-white ul.m-nav .line {
+  color: #000000;
+}
+.header-nav {
+  height: 70px;
+}
+.header-nav .nav-content {
+  width: 1280px;
+  margin: 0 auto;
+}
+.header-nav .h-logo {
+  width: 150px;
+  margin-right: -150px;
+  float: left;
+  line-height: 70px;
+  text-align: center;
+  font-size: 28px;
+}
+.header-nav .h-nav {
+  width: 100%;
+  float: left;
+}
+.header-nav .h-nav ul.m-nav {
+  margin-left: 150px;
+  margin-right: 165px;
+  display: flex;
+}
+.header-nav .h-nav ul.m-nav li {
+  flex: 1;
+  height: inherit;
+  float: left;
+  text-align: center;
+}
+.header-nav .h-nav ul.m-nav li a {
+  font-size: 18px;
+  line-height: 62px;
+  height: 62px;
+  display: inline-block;
+  text-decoration: none;
+}
+.header-nav .h-nav ul.m-nav li a:hover {
+  color: #378fff;
+  border-bottom: 4px solid #378fff;
+}
+.header-nav .h-nav ul.m-nav li .f-select {
+  color: #378fff !important;
+  border-bottom: 4px solid #378fff;
+}
+.header-nav .h-nav ul.m-nav .line {
+  font-size: 24px;
+  line-height: 62px;
+  height: 62px;
+  display: inline-block;
+}
+.header-nav .h-query {
+  width: 150px;
+  margin-left: -150px;
+  height: inherit;
+  float: right;
+  position: relative;
+}
+.header-nav .h-query a {
+  height: 40px;
+  width: 40px;
+  background: url(../image/icons.png) -210px -110px no-repeat;
+  z-index: 20;
+  position: absolute;
+  top: 10px;
+  right: 5px;
+}
+.u-title {
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.u-sub-font {
+  color: #999999;
+}
+.u-i-font {
+  color: #378fff;
+}
+.u-default-font {
+  color: #fff;
+}
+.u-de-line {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.u-btn-info {
+  color: #fff;
+  background-color: #378fff;
+  border-color: #378fff;
+}
+.u-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+.ch-checkbox,
+.ch-radio {
+  min-height: 20px;
+  line-height: 20px;
+  margin-bottom: 12px;
+  margin-right: 15px;
+  padding-left: 32px;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.25s;
+  -moz-transition: 0.25s;
+  -o-transition: 0.25s;
+  transition: 0.25s;
+  -webkit-backface-visibility: hidden;
+}
+.ch-checkbox:hover,
+.ch-radio:hover {
+  color: #378fff;
+}
+.ch-checkbox .icon,
+.ch-radio .icon {
+  background: url(../image/checkbox.png) -106px -4px no-repeat;
+  display: inline-block;
+  height: 20px;
+  left: 0;
+  opacity: 1;
+  position: absolute;
+  top: -1px;
+  width: 20px;
+  -webkit-transition: opacity 0.1s linear;
+  -moz-transition: opacity 0.1s linear;
+  -o-transition: opacity 0.1s linear;
+  transition: opacity 0.1s linear;
+  -webkit-backface-visibility: hidden;
+  z-index: 2;
+}
+.ch-checkbox input,
+.ch-radio input {
+  outline: none !important;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  zoom: 1;
+}
+.ch-checkbox input[type="checkbox"],
+.ch-radio input[type="checkbox"] {
+  float: left;
+  margin-left: -20px;
+}
+.ch-radio.checked .icon {
+  background-position: -50px -25px;
+  display: block\9;
+}
+.ch-checkbox.checked .icon {
+  background-position: -72px -37px;
+  display: block\9;
+}
+.ch-radio .icon {
+  background: url(../image/radio.png) -77px 2px no-repeat;
+}
+.footer {
+  background: rgba(153, 153, 153, 0.1);
+  border: 1px solid rgba(153, 153, 153, 0.3);
+  width: 100%;
+}
+.footer .m-footer {
+  width: 1280px;
+  margin: 30px auto;
+  text-align: center;
+  line-height: 30px;
+}
+.header {
+  height: 40px;
+  background: rgba(153, 153, 153, 0.1);
+}
+.header .m-header {
+  width: 1280px;
+  text-align: right;
+  line-height: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
